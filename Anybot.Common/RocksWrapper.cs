@@ -64,6 +64,8 @@ namespace Anybot.Common
                 var strippedKey = key.Remove(0, fullPrefixLen);
 
                 yield return new KeyValuePair<string, T>(strippedKey, JsonConvert.DeserializeObject<T>(iterator.StringValue()));
+
+                iterator.Next();
             }
         }
     }

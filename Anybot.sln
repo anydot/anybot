@@ -14,7 +14,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Directory.Build.Props = Directory.Build.Props
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoumenBot.Tests", "RoumenBotTests\RoumenBot.Tests.csproj", "{B696EC25-54A1-4F48-BACE-D0FE47F1D3D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoumenBot.Tests", "RoumenBot.Tests\RoumenBot.Tests.csproj", "{B696EC25-54A1-4F48-BACE-D0FE47F1D3D8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Anybot.Common", "Anybot.Common\Anybot.Common.csproj", "{63BE9906-6535-46F2-BA54-CF95F06C0F2C}"
 EndProject
