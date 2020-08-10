@@ -1,0 +1,1276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="RoumingPage" xml:space="preserve">
+    <value>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs" lang="cs"&gt;
+&lt;head&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1"/&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"/&gt;
+&lt;meta http-equiv="Content-language" content="cs" /&gt;
+&lt;meta name="description" content="Roumenův Rouming server plný zábavných a zajímavých obrázků, videí, odkazů a vtipů. Materiál pro hodiny a hodiny online zábavy a legrace."/&gt;
+&lt;meta name="keywords" content="humor, obrázky, foto, fotky, video, sranda, legrace, videoklipy, hry, on-line, online, Roumen, Rouming"/&gt;
+&lt;meta name="theme-color" content="#0c2e51"/&gt;
+&lt;title&gt;Roumenův Rouming - Zábavné obrázky, videa, vtipy, odkazy&lt;/title&gt;
+&lt;link rel="shortcut icon" href="/images/favicon.ico"/&gt;
+&lt;link href="https://www.rouming.cz/roumingRSS.php" rel="alternate" type="application/rss+xml" title="Rouming RSS"/&gt;
+&lt;link href="https://www.rouming.cz/roumingPiclensRSS.php" rel="alternate" type="application/rss+xml" title="" id="gallery" /&gt;
+&lt;link href="/style/roumingNew2.css" rel="stylesheet" type="text/css"/&gt;
+&lt;/head&gt;
+&lt;body class="roumingBody" link="#22ffff" alink="#55ffff" vlink="#ccffff"&gt;
+&lt;!--lista--&gt;
+&lt;table align="center" cellspacing="0" width="100%" class="roumingLista"&gt;
+ &lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td align="left"&gt;&amp;nbsp;
+&lt;a target="_blank" title="WEDOS hosting - domény" onmousedown="this.href='https://www.rouming.cz/roumingRedirector.php?type=lista&amp;amp;dest=63'; return true;" href="https://www.wedos.cz/domeny?ap=66139" rel="nofollow" class="roumingListaLink"&gt;Domény&lt;/a&gt;
+ &amp;nbsp;|&amp;nbsp; &lt;a target="_blank" title="Virtuální servery" onmousedown="this.href='https://www.rouming.cz/roumingRedirector.php?type=lista&amp;amp;dest=30'; return true;" href="https://www.wedos.cz/vps-on?ap=66139" rel="nofollow" class="roumingListaLink"&gt;VPS&lt;/a&gt;
+   &lt;/td&gt;
+  &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;!--/lista--&gt;
+&lt;div class="roumingMenu nomobile"&gt;
+&lt;ul&gt;
+ &lt;li class="active" title="Roumenizované soubory"&gt;&lt;a href="https://www.rouming.cz/"&gt;Rouming&lt;span class="yellow"&gt;&amp;nbsp;!&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+ &lt;li class="normal" title="Masité soubory"&gt;&lt;a href="https://www.roumenovomaso.cz/"&gt;Maso&lt;/a&gt;&lt;/li&gt;
+ &lt;li class="normal" title="Zajímavá videa z Youtube"&gt;&lt;a href="roumingVideo.php"&gt;Videjník&lt;span class="yellow"&gt;&amp;nbsp;!&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+ &lt;li class="normal" title="Zábavné animované GIFy"&gt;&lt;a href="roumingGIF.php"&gt;GIFník&lt;span class="yellow"&gt;&amp;nbsp;!&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+ &lt;li class="normal" title="Vtipy a jiný psaný humor"&gt;&lt;a href="roumingJokes.php"&gt;Vtipník&lt;span class="yellow"&gt;&amp;nbsp;!&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+ &lt;li class="normal" title="Zajímavé odkazy"&gt;&lt;a href="roumingLinks.php"&gt;Odkazník&lt;/a&gt;&lt;/li&gt;
+ &lt;li class="normal" title="Pokec s ostatními"&gt;&lt;a href="roumingForum.php"&gt;Fórum&lt;span class="yellow"&gt;&amp;nbsp;!&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+ &lt;li class="normal" title="Knowledge base Roumingu"&gt;&lt;a href="roumingKiwi.php"&gt;Kiwipedia&lt;span class="yellow"&gt;&amp;nbsp;!&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+ &lt;li class="normal" title="Dokumenty Roumingu"&gt;&lt;a href="roumingRules.php"&gt;Dokumenty&lt;/a&gt;&lt;/li&gt;
+ &lt;li class="normal" title="Přihlášení uživatele"&gt;&lt;a href="roumingUserLogin.php"&gt;Přihlášení&lt;span class="yellow"&gt;&amp;nbsp;!&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+ &lt;li class="normal" title="Kdo jsem?"&gt;&lt;a href="http://www.roumen.cz"&gt;Roumen&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div class="roumingMenu mobile"&gt;
+&lt;ul&gt;
+ &lt;li class="active" title="Roumenizované soubory"&gt;&lt;a href="https://www.rouming.cz/"&gt;Rouming&lt;span class="yellow"&gt;&amp;nbsp;!&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+ &lt;li class="normal" title="Masité soubory"&gt;&lt;a href="https://www.roumenovomaso.cz/"&gt;Maso&lt;/a&gt;&lt;/li&gt;
+ &lt;li class="normal" title="Zajímavá videa z Youtube"&gt;&lt;a href="roumingVideo.php"&gt;Videa&lt;span class="yellow"&gt;&amp;nbsp;!&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+ &lt;li class="normal" title="Zábavné animované GIFy"&gt;&lt;a href="roumingGIF.php"&gt;GIFy&lt;span class="yellow"&gt;&amp;nbsp;!&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+ &lt;li class="normal" title="Vtipy a jiný psaný humor"&gt;&lt;a href="roumingJokes.php"&gt;Vtipy&lt;span class="yellow"&gt;&amp;nbsp;!&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+ &lt;li class="normal" title="Pokec s ostatními"&gt;&lt;a href="roumingForum.php"&gt;Fórum&lt;span class="yellow"&gt;&amp;nbsp;!&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+ &lt;li class="normal" title="Knowledge base Roumingu"&gt;&lt;a href="roumingKiwi.php"&gt;Kiwi&lt;span class="yellow"&gt;&amp;nbsp;!&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+ &lt;li class="normal" title="Dokumenty Roumingu"&gt;&lt;a href="roumingRules.php"&gt;...&lt;/a&gt;&lt;/li&gt;
+ &lt;li class="normal" title="Přihlášení uživatele"&gt;&lt;a href="roumingUserLogin.php"&gt;Login&lt;span class="yellow"&gt;&amp;nbsp;!&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+
+&lt;div class="roumingSubMenu"&gt;
+&lt;ul&gt;
+ &lt;li title="Roumenizované soubory"&gt;&lt;a href="https://www.rouming.cz/"&gt;Rouming&lt;/a&gt;&lt;/li&gt;
+ &lt;li title="Archiv souborů"&gt;&lt;a href="roumingArchive.php"&gt;Archiv&lt;/a&gt;&lt;/li&gt;
+ &lt;li title="Náhodné procházení obrázků"&gt;&lt;a href="roumingSurvey.php"&gt;Náhodník&lt;/a&gt;&lt;/li&gt;
+ &lt;li title="Výběr nejlepších obrázků z Roumingu"&gt;&lt;a href="roumingListTop.php"&gt;Roumingtop&lt;/a&gt;&lt;/li&gt;
+ &lt;li title="Přidat nové soubory"&gt;&lt;a href="roumingAdd.php"&gt;Přidat&lt;/a&gt;&lt;/li&gt;
+ &lt;li title="Vyhozené soubory"&gt;&lt;a href="roumingTrash.php"&gt;Koš&lt;span class="yellow"&gt;&amp;nbsp;!&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;!-- --&gt;
+&lt;br/&gt;
+&lt;div class="roumingList"&gt;
+&lt;br/&gt;
+&lt;strong&gt;
+V tuto chvíli si zábavné a zajímavé obrázky prohlíží 304 uživatelů z webu a 19 z mobilu.&lt;span title="1"&gt;..&lt;/span&gt;
+&lt;/strong&gt;
+&lt;br/&gt;&lt;br/&gt;
+&lt;div class="wrapper"&gt;
+  &lt;div class="middle mw700"&gt;
+    &lt;table width="100%" border="0"&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;9:15&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430609" title="Počet komentářů"&gt;1&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;2&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;9&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=They-must-turn-into-salts.jpg"&gt;They-must-turn-into-salts&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;9:15&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430608" title="Počet komentářů"&gt;0&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;4&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;9&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Nobody-expects-it.jpg"&gt;Nobody-expects-it&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;9:13&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430607" title="Počet komentářů"&gt;1&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;4&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;10&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Updated479.jpg"&gt;Updated479&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;9:01&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430606" title="Počet komentářů"&gt;5&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;2&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;8&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=-_Asi_nejdrazsi_cs_gramodeska_-_jeste_je_cas_si_prihodit_-.jpg"&gt;-&amp;nbsp;Asi&amp;nbsp;nejdrazsi&amp;nbsp;cs&amp;nbsp;gramodeska&amp;nbsp;-&amp;nbsp;jeste...&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;8:55&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430603" title="Počet komentářů"&gt;3&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;5&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;9&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Whos-laughing-now.jpg"&gt;Whos-laughing-now&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;8:55&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430605" title="Počet komentářů"&gt;4&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;15&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;8&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=When-epidemiologists-do-geometry.jpg"&gt;When-epidemiologists-do-geometry&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;8:55&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430602" title="Počet komentářů"&gt;1&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;12&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;8&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Perfect-night.jpg"&gt;Perfect-night&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;8:55&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430604" title="Počet komentářů"&gt;4&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;12&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;8&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Nobody-reads-the-title.jpg"&gt;Nobody-reads-the-title&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;8:52&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430600" title="Počet komentářů"&gt;2&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;2&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;8&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Damn-u-Media.jpg"&gt;Damn-u-Media&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;8:52&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430601" title="Počet komentářů"&gt;2&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;5&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;10&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Classy-senior-year-photos.jpg"&gt;Classy-senior-year-photos&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;8:52&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430599" title="Počet komentářů"&gt;2&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;5&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;9&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Capt-Sisko-be-more-like-Star-Wars-tho.jpg"&gt;Capt-Sisko-be-more-like-Star-Wars-tho&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;8:52&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430598" title="Počet komentářů"&gt;0&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;3&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;8&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=At-least-how-i-imagine-it-will-be.jpg"&gt;At-least-how-i-imagine-it-will-be&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;8:49&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430597" title="Počet komentářů"&gt;5&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;2&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;8&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Gynda17.jpg"&gt;Gynda17&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;8:46&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430594" title="Počet komentářů"&gt;2&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;1&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;9&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Ze_zivota_1.jpg"&gt;Ze&amp;nbsp;zivota&amp;nbsp;1&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;8:46&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430596" title="Počet komentářů"&gt;3&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;16&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;7&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Panelak.jpg"&gt;Panelak&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;8:46&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430595" title="Počet komentářů"&gt;4&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;3&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;8&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Florida_man.jpg"&gt;Florida&amp;nbsp;man&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;8:44&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430593" title="Počet komentářů"&gt;3&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;4&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;7&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Maska_46.jpg"&gt;Maska&amp;nbsp;46&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;8:43&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430590" title="Počet komentářů"&gt;1&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;3&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;9&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=gamenight.png"&gt;gamenight&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;8:43&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430592" title="Počet komentářů"&gt;7&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;5&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;10&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Pomozte_panu_prezidentovi.jpg"&gt;Pomozte&amp;nbsp;panu&amp;nbsp;prezidentovi&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;8:43&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430591" title="Počet komentářů"&gt;0&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;2&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;8&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Jak_naznacit_zene_ze_by_mela_zhubnout.jpg"&gt;Jak&amp;nbsp;naznacit&amp;nbsp;zene&amp;nbsp;ze&amp;nbsp;by&amp;nbsp;mela&amp;nbsp;zhubnout&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;8:42&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430587" title="Počet komentářů"&gt;3&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;9&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;10&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=One_and_only.jpg"&gt;One&amp;nbsp;and&amp;nbsp;only&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;8:42&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430588" title="Počet komentářů"&gt;3&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;8&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;8&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Man_of_steal.jpg"&gt;Man&amp;nbsp;of&amp;nbsp;steal&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;8:42&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430589" title="Počet komentářů"&gt;0&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;5&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;10&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Hard_to_peel.jpg"&gt;Hard&amp;nbsp;to&amp;nbsp;peel&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;8:16&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430585" title="Počet komentářů"&gt;5&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;8&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;9&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=foceno_ze_vzducholode.jpg"&gt;foceno&amp;nbsp;ze&amp;nbsp;vzducholode&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;8:15&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430578" title="Počet komentářů"&gt;3&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;5&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;7&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=zeme_vola_mars.jpg"&gt;zeme&amp;nbsp;vola&amp;nbsp;mars&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;8:15&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430584" title="Počet komentářů"&gt;0&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;8&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;7&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=one_more_picture_before_we_go.jpg"&gt;one&amp;nbsp;more&amp;nbsp;picture&amp;nbsp;before&amp;nbsp;we&amp;nbsp;go&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;8:15&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430582" title="Počet komentářů"&gt;5&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;5&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;9&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=ochrana_predevsim.jpg"&gt;ochrana&amp;nbsp;predevsim&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;8:15&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430577" title="Počet komentářů"&gt;0&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;7&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;8&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=me_r_bat.jpg"&gt;me&amp;nbsp;r&amp;nbsp;bat&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;8:15&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430581" title="Počet komentářů"&gt;0&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;11&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;8&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=je_fakt_dobrej.jpg"&gt;je&amp;nbsp;fakt&amp;nbsp;dobrej&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;8:15&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430579" title="Počet komentářů"&gt;2&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;2&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;7&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=if_i_sits_i_fits.jpg"&gt;if&amp;nbsp;i&amp;nbsp;sits&amp;nbsp;i&amp;nbsp;fits&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;8:15&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430580" title="Počet komentářů"&gt;0&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;7&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;9&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=hey_are_you_still_a_DJ.jpg"&gt;hey&amp;nbsp;are&amp;nbsp;you&amp;nbsp;still&amp;nbsp;a&amp;nbsp;DJ&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;8:15&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430576" title="Počet komentářů"&gt;12&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;2&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;9&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=dekujeme_ministrovi.jpg"&gt;dekujeme&amp;nbsp;ministrovi&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;8:15&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430583" title="Počet komentářů"&gt;8&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;2&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;10&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=I_cant_explain_it__but_I_like_the_picture.jpg"&gt;I&amp;nbsp;cant&amp;nbsp;explain&amp;nbsp;it&amp;nbsp;&amp;nbsp;but&amp;nbsp;I&amp;nbsp;like&amp;nbsp;the&amp;nbsp;pic...&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;8:12&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430574" title="Počet komentářů"&gt;0&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;3&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;11&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=socialismus_je_sexy_xxv.jpg"&gt;socialismus&amp;nbsp;je&amp;nbsp;sexy&amp;nbsp;xxv&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;8:12&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430575" title="Počet komentářů"&gt;32&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;9&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;10&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=socialismus_je_sexy_xxiv.jpg"&gt;socialismus&amp;nbsp;je&amp;nbsp;sexy&amp;nbsp;xxiv&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;1:13&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430572" title="Počet komentářů"&gt;5&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;1&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;13&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=vicious-circle-of-doing-nothing.jpg"&gt;vicious-circle-of-doing-nothing&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;05.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430571" title="Počet komentářů"&gt;7&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;2&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;4&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=kdo_by_si_chcel_zobrat_princeznu.jpg"&gt;kdo&amp;nbsp;by&amp;nbsp;si&amp;nbsp;chcel&amp;nbsp;zobrat&amp;nbsp;princeznu&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;05.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430570" title="Počet komentářů"&gt;1&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;1&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;5&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=lidi_radi_sporty_se_divaji.jpg"&gt;lidi&amp;nbsp;radi&amp;nbsp;sporty&amp;nbsp;se&amp;nbsp;divaji&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;05.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430569" title="Počet komentářů"&gt;5&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;1&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;5&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=bejvoc_pres_1_miliardu_fanousku.jpg"&gt;bejvoc&amp;nbsp;pres&amp;nbsp;1&amp;nbsp;miliardu&amp;nbsp;fanousku&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;05.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430568" title="Počet komentářů"&gt;5&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;1&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;5&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=vic_lidi_cumnelo_na_Elvisa_nez_na_mnesic.jpg"&gt;vic&amp;nbsp;lidi&amp;nbsp;cumnelo&amp;nbsp;na&amp;nbsp;Elvisa&amp;nbsp;nez&amp;nbsp;na&amp;nbsp;mnesic&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;05.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430567" title="Počet komentářů"&gt;1&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;0&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;3&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=block_lives_motter.png"&gt;block&amp;nbsp;lives&amp;nbsp;motter&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;05.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430566" title="Počet komentářů"&gt;13&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;4&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;5&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Kde_se_to_odehrava.jpg"&gt;Kde&amp;nbsp;se&amp;nbsp;to&amp;nbsp;odehrava&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;05.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430564" title="Počet komentářů"&gt;0&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;11&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;4&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Pussy_postman.jpg"&gt;Pussy&amp;nbsp;postman&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;05.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430561" title="Počet komentářů"&gt;2&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;6&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;4&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Okenar.jpg"&gt;Okenar&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;05.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430562" title="Počet komentářů"&gt;0&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;3&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;10&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Eindhoven.jpg"&gt;Eindhoven&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;05.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430565" title="Počet komentářů"&gt;2&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;2&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;1&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Baby17.jpg"&gt;Baby17&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;05.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430563" title="Počet komentářů"&gt;0&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;5&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;2&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=1596557799000.jpg"&gt;1596557799000&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;05.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430560" title="Počet komentářů"&gt;5&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;8&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;4&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Lepek_x_ledek.jpg"&gt;Lepek&amp;nbsp;x&amp;nbsp;ledek&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;05.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430559" title="Počet komentářů"&gt;0&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;13&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;1&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=tri_jso_lepci.jpg"&gt;tri&amp;nbsp;jso&amp;nbsp;lepci&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;05.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430557" title="Počet komentářů"&gt;3&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;12&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;2&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=pochci_ju.jpg"&gt;pochci&amp;nbsp;ju&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;05.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430558" title="Počet komentářů"&gt;3&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;15&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;0&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=hande_hoch.jpg"&gt;hande&amp;nbsp;hoch&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;05.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430556" title="Počet komentářů"&gt;9&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;40&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;3&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=omar.jpg"&gt;omar&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&lt;span class="yellow"&gt;&amp;nbsp;NOVÉ&lt;/span&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;05.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430549" title="Počet komentářů"&gt;26&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;22&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;2&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=dira_v_Bejrutu.jpg"&gt;dira&amp;nbsp;v&amp;nbsp;Bejrutu&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;05.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430548" title="Počet komentářů"&gt;5&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;6&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;5&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=kalendar_bejrut.JPG"&gt;kalendar&amp;nbsp;bejrut&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;05.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430543" title="Počet komentářů"&gt;5&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;16&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;3&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=pizza_guy_OK.jpg"&gt;pizza&amp;nbsp;guy&amp;nbsp;OK&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;05.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430537" title="Počet komentářů"&gt;7&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;5&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;3&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=-_vzkaz_na_zdi_-.jpg"&gt;-&amp;nbsp;vzkaz&amp;nbsp;na&amp;nbsp;zdi&amp;nbsp;-&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;05.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430531" title="Počet komentářů"&gt;5&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;32&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;9&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=lost_roomba.jpg"&gt;lost&amp;nbsp;roomba&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;05.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430528" title="Počet komentářů"&gt;6&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;28&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;12&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=letni_rozpis_sluzeb.jpg"&gt;letni&amp;nbsp;rozpis&amp;nbsp;sluzeb&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;05.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430520" title="Počet komentářů"&gt;6&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;39&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;24&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=blm_terrorist.jpg"&gt;blm&amp;nbsp;terrorist&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;05.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430519" title="Počet komentářů"&gt;47&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;12&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;12&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=china-posters.jpg"&gt;china-posters&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;05.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430518" title="Počet komentářů"&gt;9&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;6&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;21&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Grafika_pro_dnesek_-_beirut_vs_covid.png"&gt;Grafika&amp;nbsp;pro&amp;nbsp;dnesek&amp;nbsp;-&amp;nbsp;beirut&amp;nbsp;vs&amp;nbsp;covid&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;05.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430516" title="Počet komentářů"&gt;0&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;9&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;6&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=sajic.jpg"&gt;sajic&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;05.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430517" title="Počet komentářů"&gt;7&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;4&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;13&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=necum_a_drz_hubu.jpg"&gt;necum&amp;nbsp;a&amp;nbsp;drz&amp;nbsp;hubu&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;05.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430515" title="Počet komentářů"&gt;0&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;9&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;4&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=fallout_banon.jpg"&gt;fallout&amp;nbsp;banon&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;05.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430514" title="Počet komentářů"&gt;5&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;13&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;2&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=cool_steps.jpg"&gt;cool&amp;nbsp;steps&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;05.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430510" title="Počet komentářů"&gt;0&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;8&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;26&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=praha_1914.jpg"&gt;praha&amp;nbsp;1914&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;05.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430512" title="Počet komentářů"&gt;4&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;22&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;5&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=norilsk.jpg"&gt;norilsk&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;05.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430511" title="Počet komentářů"&gt;1&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;23&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;4&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=moskyt.jpg"&gt;moskyt&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;05.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430506" title="Počet komentářů"&gt;21&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;7&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;31&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=what_women_fantasize_about.jpg"&gt;what&amp;nbsp;women&amp;nbsp;fantasize&amp;nbsp;about&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;05.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430505" title="Počet komentářů"&gt;2&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;21&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;8&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=vyhled_jak_ve_vane.jpg"&gt;vyhled&amp;nbsp;jak&amp;nbsp;ve&amp;nbsp;vane&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;05.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430507" title="Počet komentářů"&gt;11&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;27&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;6&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=skoda_prceq.jpg"&gt;skoda&amp;nbsp;prceq&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;05.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430508" title="Počet komentářů"&gt;3&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;13&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;4&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=rich_man_with_a_boat.jpg"&gt;rich&amp;nbsp;man&amp;nbsp;with&amp;nbsp;a&amp;nbsp;boat&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;05.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430509" title="Počet komentářů"&gt;23&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;34&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;5&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=bacha_na_ne.jpg"&gt;bacha&amp;nbsp;na&amp;nbsp;ne&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;05.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430502" title="Počet komentářů"&gt;12&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;18&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;32&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=bejrut.jpg"&gt;bejrut&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;05.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430503" title="Počet komentářů"&gt;4&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;66&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;0&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=a_r_t.jpg"&gt;a&amp;nbsp;r&amp;nbsp;t&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;05.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430501" title="Počet komentářů"&gt;8&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;18&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;8&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=mlnd-fuck.jpg"&gt;mlnd-fuck&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;04.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430495" title="Počet komentářů"&gt;2&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;15&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;5&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Razovite_Sudety.jpg"&gt;Razovite&amp;nbsp;Sudety&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;04.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430492" title="Počet komentářů"&gt;0&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;4&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;17&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=cunacinky.jpg"&gt;cunacinky&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;04.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430486" title="Počet komentářů"&gt;1&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;19&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;2&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=smrtnecnice.jpg"&gt;smrtnecnice&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;04.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430485" title="Počet komentářů"&gt;5&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;24&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;13&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=pandochtor.jpg"&gt;pandochtor&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;04.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430481" title="Počet komentářů"&gt;9&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;11&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;1&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=-_English_RIP_-.jpg"&gt;-&amp;nbsp;English&amp;nbsp;RIP&amp;nbsp;-&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;04.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430466" title="Počet komentářů"&gt;8&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;97&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;4&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=naturaI.jpg"&gt;naturaI&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;04.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430464" title="Počet komentářů"&gt;4&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;14&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;12&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Cant_argue_with_that.jpg"&gt;Cant&amp;nbsp;argue&amp;nbsp;with&amp;nbsp;that&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;04.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430465" title="Počet komentářů"&gt;0&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;10&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;11&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=51Relatable.jpg"&gt;51Relatable&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;04.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430462" title="Počet komentářů"&gt;4&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;3&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;9&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=WT2.jpg"&gt;WT2&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;04.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430459" title="Počet komentářů"&gt;5&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;5&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;11&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Temny_pan.jpg"&gt;Temny&amp;nbsp;pan&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;04.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430460" title="Počet komentářů"&gt;1&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;7&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;12&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Seagul_ptivate_Island.png"&gt;Seagul&amp;nbsp;ptivate&amp;nbsp;Island&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;04.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430458" title="Počet komentářů"&gt;7&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;22&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;10&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=jeste_k_techtle_mechtle_-_z_fb.jpg"&gt;jeste&amp;nbsp;k&amp;nbsp;techtle&amp;nbsp;mechtle&amp;nbsp;-&amp;nbsp;z&amp;nbsp;fb&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;04.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430455" title="Počet komentářů"&gt;19&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;32&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;19&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Brnak_jede_do_Prahy.jpg"&gt;Brnak&amp;nbsp;jede&amp;nbsp;do&amp;nbsp;Prahy&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;04.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430453" title="Počet komentářů"&gt;0&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;15&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;9&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=trojansound.jpg"&gt;trojansound&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;04.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430451" title="Počet komentářů"&gt;2&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;22&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;12&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Well-yes-but-actually-no.jpg"&gt;Well-yes-but-actually-no&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;04.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430452" title="Počet komentářů"&gt;2&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;23&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;7&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Wait-whattttttt.jpg"&gt;Wait-whattttttt&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;04.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430450" title="Počet komentářů"&gt;6&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;27&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;8&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Tutorials-these-days.jpg"&gt;Tutorials-these-days&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;04.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430449" title="Počet komentářů"&gt;4&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;20&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;11&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Daily-Mirror-1923.jpg"&gt;Daily-Mirror-1923&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;04.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430446" title="Počet komentářů"&gt;1&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;8&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;6&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Come-in-kids.jpg"&gt;Come-in-kids&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;04.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430445" title="Počet komentářů"&gt;1&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;8&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;8&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Power-move-right-there.jpg"&gt;Power-move-right-there&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;04.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430444" title="Počet komentářů"&gt;6&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;27&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;6&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=May-Grandma-blast-in-peace.jpg"&gt;May-Grandma-blast-in-peace&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;04.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430443" title="Počet komentářů"&gt;55&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;43&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;8&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Kdo_to_je.jpg"&gt;Kdo&amp;nbsp;to&amp;nbsp;je&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;04.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430442" title="Počet komentářů"&gt;9&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;21&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;8&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=IMG-20200803-WA0020.jpg"&gt;IMG-20200803-WA0020&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;03.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430439" title="Počet komentářů"&gt;7&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;3&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;10&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=rasove_vyvazeny_zenomuzjpg.jpg"&gt;rasove&amp;nbsp;vyvazeny&amp;nbsp;zenomuzjpg&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;03.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430437" title="Počet komentářů"&gt;3&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;24&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;4&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Sefe_nafoukni_mi_balonek.jpg"&gt;Sefe&amp;nbsp;nafoukni&amp;nbsp;mi&amp;nbsp;balonek&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;03.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430436" title="Počet komentářů"&gt;7&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;18&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;6&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=No-context.jpg"&gt;No-context&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;03.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430434" title="Počet komentářů"&gt;3&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;8&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;6&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=cat_tower.jpg"&gt;cat&amp;nbsp;tower&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;03.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430433" title="Počet komentářů"&gt;5&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;19&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;0&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=dvouocase_paa_paaaa.jpg"&gt;dvouocase&amp;nbsp;paa&amp;nbsp;paaaa&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;03.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430432" title="Počet komentářů"&gt;0&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;26&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;6&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=assholes_only.jpg"&gt;assholes&amp;nbsp;only&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;03.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430431" title="Počet komentářů"&gt;3&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;4&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;9&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=-_The_Kiss_-_vic_kocicek_._._._-.jpg"&gt;-&amp;nbsp;The&amp;nbsp;Kiss&amp;nbsp;-&amp;nbsp;vic&amp;nbsp;kocicek&amp;nbsp;.&amp;nbsp;.&amp;nbsp;.&amp;nbsp;-&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;03.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430429" title="Počet komentářů"&gt;4&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;8&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;4&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=-_easy_riders_-.jpg"&gt;-&amp;nbsp;easy&amp;nbsp;riders&amp;nbsp;-&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;03.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430426" title="Počet komentářů"&gt;7&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;30&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;2&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=-_Jidas_-.jpg"&gt;-&amp;nbsp;Jidas&amp;nbsp;-&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;03.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430391" title="Počet komentářů"&gt;11&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;7&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;23&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=2040.jpg"&gt;2040&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;03.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430353" title="Počet komentářů"&gt;11&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;37&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;27&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Hamacek_is_a_true_roumenist.jpg"&gt;Hamacek&amp;nbsp;is&amp;nbsp;a&amp;nbsp;true&amp;nbsp;roumenist&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;03.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430350" title="Počet komentářů"&gt;4&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;79&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;3&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=noyes.jpg"&gt;noyes&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;03.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430348" title="Počet komentářů"&gt;9&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;42&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;25&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=lesbian_relationships.jpg"&gt;lesbian&amp;nbsp;relationships&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;03.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430349" title="Počet komentářů"&gt;0&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;19&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;4&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=break_your_relationship.jpg"&gt;break&amp;nbsp;your&amp;nbsp;relationship&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;03.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430345" title="Počet komentářů"&gt;1&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;14&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;3&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=ash_tray.jpg"&gt;ash&amp;nbsp;tray&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;03.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430346" title="Počet komentářů"&gt;3&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbspnbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;12&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;7&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=age_to_the_beholder.jpg"&gt;age&amp;nbsp;to&amp;nbsp;the&amp;nbsp;beholder&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;03.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430343" title="Počet komentářů"&gt;2&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;10&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;6&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Russian_outhouse.jpg"&gt;Russian&amp;nbsp;outhouse&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;03.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430347" title="Počet komentářů"&gt;3&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;15&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;4&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Reveal_your_inner_beauty.jpg"&gt;Reveal&amp;nbsp;your&amp;nbsp;inner&amp;nbsp;beauty&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;02.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430337" title="Počet komentářů"&gt;11&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;19&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;1&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Indeed-they-do.jpg"&gt;Indeed-they-do&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;02.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430335" title="Počet komentářů"&gt;10&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;11&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;4&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=jakto_muze_nekto_jist.jpg"&gt;jakto&amp;nbsp;muze&amp;nbsp;nekto&amp;nbsp;jist&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;02.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430336" title="Počet komentářů"&gt;8&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;21&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;1&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=IRLand.jpg"&gt;IRLand&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;02.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430334" title="Počet komentářů"&gt;6&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;2&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;13&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=vysplejchnu_ti_kanal.jpg"&gt;vysplejchnu&amp;nbsp;ti&amp;nbsp;kanal&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;02.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430332" title="Počet komentářů"&gt;0&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;14&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;2&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=aj_mejd_diz.jpg"&gt;aj&amp;nbsp;mejd&amp;nbsp;diz&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;02.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430330" title="Počet komentářů"&gt;18&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;37&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;0&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Soudruh_premier_na_inspekci.png"&gt;Soudruh&amp;nbsp;premier&amp;nbsp;na&amp;nbsp;inspekci&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;02.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430323" title="Počet komentářů"&gt;4&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;5&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;2&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Cut_recreation_area.jpg"&gt;Cut&amp;nbsp;recreation&amp;nbsp;area&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;02.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430313" title="Počet komentářů"&gt;8&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;46&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;1&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=impossibru.jpg"&gt;impossibru&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;02.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430311" title="Počet komentářů"&gt;15&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;26&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;4&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Hieronym_Bosch.jpg"&gt;Hieronym&amp;nbsp;Bosch&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;02.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430308" title="Počet komentářů"&gt;6&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;10&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;1&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=the_computer_stepped_over_some_magic_beans_i_dont_know.jpg"&gt;the&amp;nbsp;computer&amp;nbsp;stepped&amp;nbsp;over&amp;nbsp;some&amp;nbsp;magic&amp;nbsp;...&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;02.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430310" title="Počet komentářů"&gt;2&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;24&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;1&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=kouzelny_lektvar.jpg"&gt;kouzelny&amp;nbsp;lektvar&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;02.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430309" title="Počet komentářů"&gt;1&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;22&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;2&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=kdyz_umres.jpg"&gt;kdyz&amp;nbsp;umres&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;02.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430303" title="Počet komentářů"&gt;9&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;17&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;3&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=najvacsi_pocet_objednavok_z_pepickova.jpg"&gt;najvacsi&amp;nbsp;pocet&amp;nbsp;objednavok&amp;nbsp;z&amp;nbsp;pepickova&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;02.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430302" title="Počet komentářů"&gt;3&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;18&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;1&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Souvisejici_reklama.jpg"&gt;Souvisejici&amp;nbsp;reklama&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;02.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=430297" title="Počet komentářů"&gt;2&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;16&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;3&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Jaky_je_rok_gta.jpg"&gt;Jaky&amp;nbsp;je&amp;nbsp;rok&amp;nbsp;gta&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td align="right"&gt;02.08.2020&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&lt;a href="roumingComments.php?object=428478" title="Počet komentářů"&gt;6&lt;/a&gt;&lt;/td&gt;
+  &lt;td align="right"&gt;&amp;nbsp;&amp;nbsp;&lt;font color="#00dd33" title="Počet líbí se mi"&gt;19&lt;/font&gt;&lt;/td&gt;&lt;td&gt;/&lt;/td&gt;&lt;td align="left"&gt;&lt;font color="#ff1133" title="Počet nelíbí se mi"&gt;8&lt;/font&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;td width="100%"&gt;&amp;nbsp;&amp;nbsp;&lt;a href="https://www.rouming.cz/roumingShow.php?file=Dilema_corona.jpg"&gt;Dilema&amp;nbsp;corona&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;
+ &lt;form action="roumingArchive.php" method="get"&gt;
+  &lt;input type="submit" value=" Další soubory naleznete v archivu  &amp;gt;&amp;gt;&amp;gt;  " class="input"/&gt;
+ &lt;/form&gt;
+&lt;br/&gt;
+
+&lt;table width="100%"&gt;
+&lt;tr&gt;&lt;td&gt;
+Vítejte na Roumingu, serveru plném zábavných a zajímavých obrázků, videí, vtipů a odkazů. Najdete zde materiál pro hodiny a hodiny online zábavy a legrace.&lt;br/&gt;
+Je zde obrovské množství zábavných a zajímavých obrázků, legračních videí, mnoho vtipů a celá řada odkazů. Kromě toho zde máme diskusní fórum a komu to nestačí,
+je zde i ostřejší sekce na sesterském webu Roumenovo Maso, která je přístupná až od 18 let.&lt;br/&gt;&lt;br/&gt;
+&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td align="right"&gt;
+&lt;a href="roumingRules.php"&gt;Pravidla&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;a href="roumingContact.php?site=Rouming"&gt;Kontakt&lt;/a&gt;
+&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+    &lt;/div&gt;
+
+    &lt;div class="sidebar w400"&gt;
+      &lt;table border="0" width="100%"&gt;
+    &lt;tr&gt;
+     &lt;td colspan="2" height="32" align="right" valign="top"&gt;
+&lt;script language="JavaScript" type="text/javascript"&gt;
+&lt;!--
+var icons=["RS","FB","AN","IP","WP","KI","TW","FL"];
+var bout = new Array();
+var bover = new Array();
+if(document.images){
+  for(var i in icons){
+    var item=icons[i];
+    bout[item]       = new Image();
+    bout[item].src   = "/images/icons/W" + item + "B.png" ;
+    bover[item]     = new Image() ;
+    bover[item].src = "/images/icons/W" + item + "C.png" ;
+  }
+}
+function iover(name){
+  if(document.images)
+    document.getElementById(name).src = bover[name].src;
+}
+function iout(name){
+  if(document.images)
+    document.getElementById(name).src = bout[name].src;
+}
+// --&gt;
+&lt;/script&gt;
+&lt;div class="icons"&gt;
+&lt;a href="/roumingRSSList.php" rel="nofollow" title="Rouming RSS" class="RS"&gt;&lt;span&gt;Rouming RSS&lt;/span&gt;&lt;/a&gt;
+&lt;a href="http://www.facebook.com/RoumenuvRouming" target="IF" rel="nofollow" title="Facebook Rouming" class="FB"&gt;&lt;span&gt;Facebook Rouming&lt;/span&gt;&lt;/a&gt;
+&lt;a href="https://play.google.com/store/apps/details?id=cz.roumen.roumenoid" target="IA" rel="nofollow" title="Rouming pro Android" class="AN"&gt;&lt;span&gt;Rouming pro Android&lt;/span&gt;&lt;/a&gt;
+&lt;a href="http://itunes.apple.com/us/app/irouming/id497195558?mt=8" target="II" rel="nofollow" title="Rouming pro iPhone" class="IP"&gt;&lt;span&gt;Rouming pro iPhone&lt;/span&gt;&lt;/a&gt;
+&lt;a href="http://twitter.com/RoumenuvRouming" target="IT" rel="nofollow" title="Twitter Rouming" class="TW"&gt;&lt;span&gt;Twitter Rouming&lt;/span&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;br/&gt;&amp;nbsp;
+     &lt;/td&gt;
+    &lt;/tr&gt;
+     &lt;tr&gt;&lt;td align="center" class="roumingForumMessage" colspan="2"&gt;&lt;font size="-1"&gt;oriiisky.jpg&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;
+     &lt;tr&gt;&lt;td align="center" class="roumingForumTitle" colspan="2"&gt;&lt;a href="https://www.rouming.cz/roumingShow.php?file=oriiisky.jpg"&gt;&lt;img src="https://www.rouming.cz/POHdir/POHoriiisky.jpg" border="0" alt="oriiisky.jpg" title="oriiisky.jpg"/&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td colspan="2" height="20"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;
+     &lt;td colspan="2" align="right"&gt;
+&lt;script src="https://adx.adplace.cz/kernel/js.php?id=2332"&gt;&lt;/script&gt;
+     &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;&lt;td colspan="2" height="20"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;
+     &lt;td colspan="2" align="center"&gt;
+      &lt;table border="0" width="100%"&gt;
+       &lt;tr&gt;&lt;td class="roumingForumMessage" align="center" colspan="2"&gt;&lt;form action="" method="post"&gt;Nejlepší obrázky za poslední &lt;select name="interval" onchange="this.form.submit();return true;" class="input"&gt;&lt;option value="1"&gt;den&lt;/option&gt;&lt;option value="2" selected="selected"&gt;týden&lt;/option&gt;&lt;option value="3"&gt;měsíc&lt;/option&gt;&lt;/select&gt;&lt;/form&gt;&lt;/td&gt;&lt;/tr&gt;
+       &lt;tr&gt;
+        &lt;td align="center" class="roumingForumTitle"&gt;&lt;a href="roumingShow.php?file=naturaI.jpg" target="_blank"&gt;&lt;img src="/thumbnails/naturaI.jpg" width="150" height="150" border="0" alt="naturaI" title="naturaI"/&gt;&lt;/a&gt;&lt;/td&gt;
+        &lt;td align="center" class="roumingForumTitle"&gt;&lt;a href="roumingShow.php?file=noyes.jpg" target="_blank"&gt;&lt;img src="/thumbnails/noyes.jpg" width="150" height="150" border="0" alt="noyes" title="noyes"/&gt;&lt;/a&gt;&lt;/td&gt;
+       &lt;/tr&gt;&lt;tr&gt;
+        &lt;td align="center" class="roumingForumTitle"&gt;&lt;a href="roumingShow.php?file=Cbzn.jpg" target="_blank"&gt;&lt;img src="/thumbnails/Cbzn.jpg" width="150" height="150" border="0" alt="Cbzn" title="Cbzn"/&gt;&lt;/a&gt;&lt;/td&gt;
+        &lt;td align="center" class="roumingForumTitle"&gt;&lt;a href="roumingShow.php?file=a_r_t.jpg" target="_blank"&gt;&lt;img src="/thumbnails/a_r_t.jpg" width="150" height="150" border="0" alt="a&amp;nbsp;r&amp;nbsp;t" title="a&amp;nbsp;r&amp;nbsp;t"/&gt;&lt;/a&gt;&lt;/td&gt;
+       &lt;/tr&gt;&lt;tr&gt;
+        &lt;td align="center" class="roumingForumTitle"&gt;&lt;a href="roumingShow.php?file=impossibru.jpg" target="_blank"&gt;&lt;img src="/thumbnails/impossibru.jpg" width="150" height="150" border="0" alt="impossibru" title="impossibru"/&gt;&lt;/a&gt;&lt;/td&gt;
+        &lt;td align="center" class="roumingForumTitle"&gt;&lt;a href="roumingShow.php?file=black_truth_matters.jpg" target="_blank"&gt;&lt;img src="/thumbnails/black_truth_matters.jpg" width="150" height="150" border="0" alt="black&amp;nbsp;truth&amp;nbsp;matters" title="black&amp;nbsp;truth&amp;nbsp;matters"/&gt;&lt;/a&gt;&lt;/td&gt;
+       &lt;/tr&gt;&lt;tr&gt;
+        &lt;td align="center" class="roumingForumTitle"&gt;&lt;a href="roumingShow.php?file=IMG-20200731-WA0011.jpg" target="_blank"&gt;&lt;img src="/thumbnails/IMG-20200731-WA0011.jpg" width="150" height="150" border="0" alt="IMG-20200731-WA0011" title="IMG-20200731-WA0011"/&gt;&lt;/a&gt;&lt;/td&gt;
+        &lt;td align="center" class="roumingForumTitle"&gt;&lt;a href="roumingShow.php?file=Cinauq.jpg" target="_blank"&gt;&lt;img src="/thumbnails/Cinauq.jpg" width="150" height="150" border="0" alt="Cinauq" title="Cinauq"/&gt;&lt;/a&gt;&lt;/td&gt;
+       &lt;/tr&gt;&lt;tr&gt;
+        &lt;td align="center" class="roumingForumTitle"&gt;&lt;a href="roumingShow.php?file=Ffs-Frodo.jpg" target="_blank"&gt;&lt;img src="/thumbnails/Ffs-Frodo.jpg" width="150" height="150" border="0" alt="Ffs-Frodo" title="Ffs-Frodo"/&gt;&lt;/a&gt;&lt;/td&gt;
+        &lt;td align="center" class="roumingForumTitle"&gt;&lt;a href="roumingShow.php?file=Soudruh_premier_na_inspekci.png" target="_blank"&gt;&lt;img src="/thumbnails/Soudruh_premier_na_inspekci.png" width="150" height="150" border="0" alt="Soudruh&amp;nbsp;premier&amp;nbsp;na&amp;nbsp;inspekci" title="Soudruh&amp;nbsp;premier&amp;nbsp;na&amp;nbsp;inspekci"/&gt;&lt;/a&gt;&lt;/td&gt;
+       &lt;/tr&gt;
+       &lt;tr&gt;&lt;td align="right" colspan="2"&gt;&lt;span class="roumingButton"&gt;&lt;a href="roumingListTop.php"&gt;další...&lt;/a&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;/table&gt;
+     &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;&lt;td colspan="2" height="20"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;
+     &lt;td colspan="2" align="center"&gt;
+      &lt;table border="0" width="100%"&gt;
+       &lt;tr&gt;&lt;td align="center" class="roumingForumMessage"&gt;&lt;a href="roumingComments.php"&gt;Poslední komentáře&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+       &lt;tr&gt;&lt;td align="left" class="roumingForumTitle"&gt;&lt;a href="roumingComments.php?object=430596" title="Pred pár rokmi sme boli pozrieť dom na predaj.
+Svokor: tie steny sú riadne hrubé, poctivé
+Majiteľ: robil som v betonárke ;-)"&gt;Pred pár rokmi sme boli pozrieť dom na predaj....&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+       &lt;tr&gt;&lt;td align="left" class="roumingForumTitle"&gt;&lt;a href="roumingComments.php?object=430587" title="Ten modrej klín se rval do prdele blbě. "&gt;Ten modrej klín se rval do prdele blbě. &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+       &lt;tr&gt;&lt;td align="left" class="roumingForumTitle"&gt;&lt;a href="roumingComments.php?object=430575" title="@dozorce, plne souhlasim, ze hospodareni statu se nezlepsilo. Ani se zlepsit moc nemuze, protoze hospodari urednici, kteri za nic neruci a z ciziho..."&gt;@dozorce, plne souhlasim, ze hospodareni statu ...&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+       &lt;tr&gt;&lt;td align="left" class="roumingForumTitle"&gt;&lt;a href="roumingComments.php?object=430600" title="Vzhledem k tomu, že jsou oblečený, tak ještě utěšená není."&gt;Vzhledem k tomu, že jsou oblečený, tak ještě ut...&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+       &lt;tr&gt;&lt;td align="left" class="roumingForumTitle"&gt;&lt;a href="roumingComments.php?object=430576" title="Tak proč se pouštíš do takového srovnaní když nakonec uznaš že tehdejší lesy byly zničené? Většina lesů u nás byla docela pustina v té době ve srov..."&gt;Tak proč se pouštíš do takového srovnaní když n...&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+       &lt;tr&gt;&lt;td align="left" class="roumingForumTitle"&gt;&lt;a href="roumingComments.php?object=430595" title="Nojo, výchoďák. Do ČR svým buranstvim zapadne."&gt;Nojo, výchoďák. Do ČR svým buranstvim zapadne.&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+       &lt;tr&gt;&lt;td align="left" class="roumingForumTitle"&gt;&lt;a href="roumingComments.php?object=430603" title="@Koroner Poznám babu, ktorá robila na severe Talianska v hoteli a vďaka idiotským šéfom to chytil celý hotel. Nie, nechcel by si to dostať a nie, n..."&gt;@Koroner Poznám babu, ktorá robila na severe Ta...&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+       &lt;tr&gt;&lt;td align="left" class="roumingForumTitle"&gt;&lt;a href="roumingComments.php?object=430575" title="Filipes, do dolu se zatim nezavira, ale treba ve Spanelsku se zaviraji nepohodlni politici (ale kvuli &amp;quot;nedostatku demokracie&amp;quot; se picuje na Magyaror..."&gt;Filipes, do dolu se zatim nezavira, ale treba v...&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+       &lt;tr&gt;&lt;td align="left" class="roumingForumTitle"&gt;&lt;a href="roumingComments.php?object=430576" title="Neodsyrování neodsířených elektráren."&gt;Neodsyrování neodsířených elektráren.&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+       &lt;tr&gt;&lt;td align="left" class="roumingForumTitle"&gt;&lt;a href="roumingComments.php?object=430604" title="I want it all! :)"&gt;I want it all! :)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;/table&gt;
+     &lt;/td&gt;
+    &lt;/tr&gt;
+   &lt;/table&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script language="JavaScript" type="text/javascript"&gt;
+&lt;!--
+document.write ('&lt;img src="https://toplist.cz/dot.asp?id=169028&amp;https='+escape(document.referrer)+'&amp;wi='+escape(window.screen.width)+'&amp;he='+escape(window.screen.height)+'&amp;cd='+escape(window.screen.colorDepth)+'&amp;t='+escape(document.title)+'" width="1" height="1" border="0" alt="" &gt;');
+//--&gt;
+&lt;/script&gt;&lt;noscript&gt;&lt;img src="https://toplist.cz/dot.asp?id=169028" border="0" alt="TOPlist" width="1" height="1"/&gt;&lt;/noscript&gt;
+&lt;script type="text/javascript"&gt;
+
+ var _gaq = _gaq || [];
+ _gaq.push(['_setAccount', 'UA-29456767-1']);
+ _gaq.push(['_trackPageview']);
+
+ (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+&lt;/script&gt;
+&lt;div class="eu-cookies" id="eu-cookies"&gt;
+ Tento web používá k poskytování služeb, personalizaci reklam a analýze návštěvnosti soubory &lt;a href="https://cs.wikipedia.org/wiki/HTTP_cookie" target="_blank"&gt;cookie&lt;/a&gt;.
+ Podmínky pro uchovávání nebo přístup ke cookies je možné nastavit ve vašem prohlížeči.
+ &lt;a href="http://ec.europa.eu/justice/data-protection/article-29/documentation/opinion-recommendation/files/2013/wp208_en.pdf" target="_blank"&gt;Více...&lt;/a&gt;
+ &lt;button onclick="var date=new Date();date.setFullYear(date.getFullYear()+10);document.cookie='eu=1; path=/; expires='+date.toGMTString();document.getElementById('eu-cookies').style.display='none';"&gt;OK&lt;/button&gt;
+&lt;/div&gt;
+&lt;noscript&gt;
+&lt;a href="https://go.eu.bbelements.com/please/redirect/20220/1/19/1/" target="_blank"&gt;&lt;img src="https://go.eu.bbelements.com/please/showit/20220/1/19/1/?typkodu=img" border='0' alt='' /&gt;&lt;/a&gt;
+&lt;/noscript&gt;
+&lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+</root>
