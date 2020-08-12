@@ -52,7 +52,7 @@ namespace ActivePass.Tests
 
             var activepass = new ActivePassService(optionsWrapper.Object, Mock.Of<ILogger<ActivePassService>>(), dbMock.Object, botMock.Object, restServiceMock.Object, new NullDelayer());
 
-            await activepass.RunOnce();
+            await activepass.RunOnce().ConfigureAwait(false);
         }
 
         [Test]
@@ -65,7 +65,7 @@ namespace ActivePass.Tests
 
             var activepass = new ActivePassService(optionsWrapper.Object, Mock.Of<ILogger<ActivePassService>>(), dbMock.Object, botMock.Object, restServiceMock.Object, new NullDelayer());
 
-            await activepass.RunOnce();
+            await activepass.RunOnce().ConfigureAwait(false);
         }
 
         [Test]
@@ -81,7 +81,7 @@ namespace ActivePass.Tests
 
             var activepass = new ActivePassService(optionsWrapper.Object, Mock.Of<ILogger<ActivePassService>>(), dbMock.Object, botMock.Object, restServiceMock.Object, new NullDelayer());
 
-            await activepass.RunOnce();
+            await activepass.RunOnce().ConfigureAwait(false);
         }
 
         [Test]
@@ -95,9 +95,8 @@ namespace ActivePass.Tests
 
             var activepass = new ActivePassService(optionsWrapper.Object, Mock.Of<ILogger<ActivePassService>>(), dbMock.Object, botMock.Object, restServiceMock.Object, new NullDelayer());
 
-            await activepass.RunOnce();
+            await activepass.RunOnce().ConfigureAwait(false);
         }
-
 
         public static Moq.Language.Flow.ISetup<ITelegramBotClient, Task<Telegram.Bot.Types.Message>> WithSendMessage(Mock<ITelegramBotClient> bot, long chatid, Expression<Func<string, bool>> msgMatch)
         {
