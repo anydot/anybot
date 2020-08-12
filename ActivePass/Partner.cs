@@ -21,7 +21,9 @@ namespace ActivePass
 
         public string Company { get; }
         public string Website { get; }
+        [JsonProperty("ap_uri")]
         public string PartnerId { get; }
+        [JsonProperty("image_url")]
         public string ImageUrl { get; }
         public string Address { get; }
         public string District { get; }

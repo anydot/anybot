@@ -81,11 +81,11 @@ namespace Anybot.Common.Tests
             var data = new TestModel { Id1 = "id1", Id2 = "id2" };
             db.Write("key1", data);
 
-            Assert.IsTrue(db.TryRead("key1", out var result));
+            Assert.IsTrue(db.TryRead("key1", out _));
 
             db.Delete("key1");
 
-            Assert.IsFalse(db.TryRead("key1", out result));
+            Assert.IsFalse(db.TryRead("key1", out _));
         }
 
         [Test]
@@ -107,6 +107,5 @@ namespace Anybot.Common.Tests
 
             CollectionAssert.AreEquivalent(data, result);
         }
-
     }
 }

@@ -69,7 +69,7 @@ namespace ActivePass
             return true;
         }
 
-        private async Task RunOnce()
+        internal async Task RunOnce()
         {
             var allPartners = await activePassRestService.FetchPartnersFromWeb().ConfigureAwait(false);
 
@@ -82,7 +82,7 @@ namespace ActivePass
                     return PartnerDbMatch.NotFound;
                 }
 
-                if (allPartners.Contains(p))
+                if (allPartnersDb.Contains(p))
                 {
                     return PartnerDbMatch.FoundExactMatch;
                 }
@@ -109,7 +109,8 @@ namespace ActivePass
         {
             foreach (var partner in partners)
             {
-                logger.LogInformation("Processing {0}", partner);
+                logger.LogInformation($"Processing partner {partner.PartnerId}, prefix {prefix}");
+                logger.LogDebug(partner.ToString());
 
                 try
                 {
