@@ -69,18 +69,35 @@ namespace ActivePass.Tests
         }
 
         [Test]
-        public async Task Run_FetchesPartners_GivenExistingPartnersIsReturned_DoesNothing()
+        public async Task Run_FetchesPartners_GivenOldPartnerIsReturned_SendsUpdate()
         {
-            var partner = new Partner("", "", "key", "", "", "", "", "", "", "");
-            var partnerDb = new Partner("s", "m", "key", "", "", "", "", "", "", "");
+            var partner = new Partner("", "", "key", null, "", "", "", "", "", "");
+            var partnerDb = new Partner("s", "m", "key", null, "", "", "", "", "", "");
 
             restServiceMock.Setup(r => r.FetchPartnersFromWeb()).ReturnsAsync(new List<Partner> { partner });
             dbMock.Setup(d => d.Iterate()).Returns(new List<KeyValuePair<string, Partner>> { new KeyValuePair<string, Partner>("key", partnerDb)});
+            dbMock.Setup(d => d.Write("key", partner));
+            WithSendMessage(botMock, 42, s => s.Contains("key") && s.Contains("Updated")).ReturnsAsync(Mock.Of<Telegram.Bot.Types.Message>());
 
             var activepass = new ActivePassService(optionsWrapper.Object, Mock.Of<ILogger<ActivePassService>>(), dbMock.Object, botMock.Object, restServiceMock.Object, new NullDelayer());
 
             await activepass.RunOnce();
         }
+
+        [Test]
+        public async Task Run_FetchesPartners_GivenSamePartner_DoesNothing()
+        {
+            var partner = new Partner("", "", "key", null, "", "", "", "", "", "");
+            var partnerDb = new Partner("", "", "key", null, "", "", "", "", "", "");
+
+            restServiceMock.Setup(r => r.FetchPartnersFromWeb()).ReturnsAsync(new List<Partner> { partner });
+            dbMock.Setup(d => d.Iterate()).Returns(new List<KeyValuePair<string, Partner>> { new KeyValuePair<string, Partner>("key", partnerDb) });
+
+            var activepass = new ActivePassService(optionsWrapper.Object, Mock.Of<ILogger<ActivePassService>>(), dbMock.Object, botMock.Object, restServiceMock.Object, new NullDelayer());
+
+            await activepass.RunOnce();
+        }
+
 
         public static Moq.Language.Flow.ISetup<ITelegramBotClient, Task<Telegram.Bot.Types.Message>> WithSendMessage(Mock<ITelegramBotClient> bot, long chatid, Expression<Func<string, bool>> msgMatch)
         {
