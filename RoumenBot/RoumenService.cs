@@ -45,10 +45,12 @@ namespace RoumenBot
             foreach (var image in allImages)
             {
                 cancellationToken.ThrowIfCancellationRequested();
-                logger.LogDebug($"New image {image.ImageUrl}");
+
 
                 if (!db.TryRead(image.ImageUrl, out var _))
                 {
+                    logger.LogDebug($"New image {image.ImageUrl}");
+
                     if (!options.Value.Silent)
                     {
                         try
