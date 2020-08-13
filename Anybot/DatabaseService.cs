@@ -22,7 +22,7 @@ namespace Anybot
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
-            while (stoppingToken.IsCancellationRequested)
+            while (!stoppingToken.IsCancellationRequested)
             {
                 logger.LogDebug("Compacting DB");
                 rocksDb.CompactRange((byte[]?)null, null);
