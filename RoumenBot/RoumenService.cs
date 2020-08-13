@@ -51,7 +51,14 @@ namespace RoumenBot
                 {
                     if (!options.Value.Silent)
                     {
-                        await delayer.Delay(async () => await bot.MessageWithOptionalImage((long)options.Value.ChatId!, FormatImage(image), image.ImageUrl).ConfigureAwait(false)).ConfigureAwait(false);
+                        try
+                        {
+                            await delayer.Delay(async () => await bot.MessageWithOptionalImage((long)options.Value.ChatId!, FormatImage(image), image.ImageUrl).ConfigureAwait(false)).ConfigureAwait(false);
+                        }
+                        catch (Exception e)
+                        {
+                            logger.LogError(e, $"Can't process image {image}");
+                        }
                     }
                     db.Write(image.ImageUrl, image);
                 }
