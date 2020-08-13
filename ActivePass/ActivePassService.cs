@@ -32,7 +32,7 @@ namespace ActivePass
 
         public ActivePassService(IOptions<BotOptions> options, ILogger<ActivePassService> logger, IRocksWrapper<Partner> db, ITelegramBotClient bot, IActivePassRestService activePassRestService, IDelayer delayer)
         {
-            _ = options.Value.ChatId ?? throw new ArgumentNullException("Bot.chatId");
+            _ = options.Value.ChatId ?? throw new ArgumentOutOfRangeException(nameof(options), "options don't contain the chatID");
             refreshDelay = options.Value.RefreshDelay;
 
             this.logger = logger;

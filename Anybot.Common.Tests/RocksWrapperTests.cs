@@ -4,7 +4,6 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace Anybot.Common.Tests
 {
@@ -21,6 +20,11 @@ namespace Anybot.Common.Tests
                 return obj is TestModel model &&
                        Id1 == model.Id1 &&
                        Id2 == model.Id2;
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(Id1, Id2);
             }
         }
 

@@ -22,7 +22,7 @@ namespace RoumenBot
 
         public RoumenService(IOptions<RoumenOptions> options, ILogger<RoumenService> logger, IRocksWrapper<RoumenImage> db, ITelegramBotClient bot, IRoumenRestService roumenRestService, IDelayer delayer)
         {
-            _ = options.Value.ChatId ?? throw new ArgumentNullException("Bot.chatId");
+            _ = options.Value.ChatId ?? throw new ArgumentOutOfRangeException(nameof(options), "options don't contain the chatID");
             refreshDelay = options.Value.RefreshDelay;
 
             this.logger = logger;

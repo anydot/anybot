@@ -2,17 +2,11 @@
 
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Configuration;
-using Telegram.Bot;
 using Microsoft.Extensions.Options;
-using Microsoft.Extensions.Logging;
 using RocksDbSharp;
 using Anybot.Common;
 using RoumenBot;
 using ActivePass;
-using Microsoft.VisualBasic;
-using System;
-using System.Linq;
 
 namespace Anybot
 {
@@ -24,18 +18,8 @@ namespace Anybot
                 .CreateDefaultBuilder(args)
                 .UseConsoleLifetime()
                 .ConfigureServices(ConfigureServices)
-                .ConfigureLogging(ConfigureLogging)
                 .Build()
                 .RunAsync().ConfigureAwait(false);
-        }
-
-        private static void ConfigureLogging(HostBuilderContext context, ILoggingBuilder builder)
-        {
-            if (!context.HostingEnvironment.IsDevelopment())
-            {
-                //                var syslogSettings = new SyslogLoggerSettings() { MessageTransportProtocol = Syslog.Framework.Logging.TransportProtocols.TransportProtocol.UnixSocket};
-                //                builder.AddProvider(new SyslogLoggerProvider(syslogSettings, "localhost", LogLevel.Information));
-            }
         }
 
         private static void ConfigureServices(HostBuilderContext context, IServiceCollection services)

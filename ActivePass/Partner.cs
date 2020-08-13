@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace ActivePass
 {
-    public class Partner : IEquatable<Partner>
+    public sealed class Partner : IEquatable<Partner>
     {
         public Partner(string company, string website, [JsonProperty("ap_uri")] string partnerId, [JsonProperty("image_url")] string imageUrl, string address, string district, string city, string zip, string latitude, string longitude)
         {

@@ -1,16 +1,10 @@
-﻿using Anybot.Common;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
+﻿using Microsoft.Extensions.Options;
 using Moq;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Linq.Expressions;
-using System.Reflection.Metadata;
-using System.Threading;
 using System.Threading.Tasks;
-using Telegram.Bot;
 using Telegram.Bot.Types.ReplyMarkups;
 
 namespace ActivePass.Tests

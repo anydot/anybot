@@ -2,7 +2,7 @@
 
 namespace RoumenBot
 {
-    public class RoumenImage : IEquatable<RoumenImage>
+    public sealed class RoumenImage : IEquatable<RoumenImage>
     {
         public RoumenImage(string imageUrl, string description, string commentLink)
         {

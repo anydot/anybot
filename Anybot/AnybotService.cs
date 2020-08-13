@@ -20,7 +20,9 @@ namespace Anybot
         private readonly ILogger<AnybotService> logger;
         private string botPostfix = "";
 
+#pragma warning disable S1168 // Empty arrays and collections should be returned instead of null
         public UpdateType[]? AllowedUpdates => null;
+#pragma warning restore S1168 // Empty arrays and collections should be returned instead of null
 
         public AnybotService(ITelegramBotClient bot, ICommand[] commands, ILogger<AnybotService> logger)
         {
