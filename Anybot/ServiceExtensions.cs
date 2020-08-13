@@ -9,6 +9,7 @@ using System.Net.Http;
 using Polly.Extensions.Http;
 using Polly;
 using System;
+using RocksDbSharp;
 
 namespace Anybot
 {
@@ -17,13 +18,20 @@ namespace Anybot
         public static IServiceCollection WithAnybot(this IServiceCollection services, HostBuilderContext context)
         {
             services.AddOptions<AnybotOptions>().Bind(context.Configuration.GetSection("Anybot"));
+
+            services.AddSingleton(s =>
+            {
+                var rocksOptions = new DbOptions().SetCreateIfMissing(true);
+                return RocksDb.Open(rocksOptions, s.GetService<IOptions<AnybotOptions>>().Value.Database);
+            });
+
             services.AddHttpClient<ITelegramBotClient>()
                 .AddPolicyHandler(HttpPolicyExtensions.HandleTransientHttpError().WaitAndRetryAsync(4, retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt))));
-
             services.AddSingleton<ITelegramBotClient>(services => new TelegramBotClient(services.GetService<IOptions<AnybotOptions>>().Value.Token, services.GetService<HttpClient>()));
             services.AddSingleton<ICommand, ChatIdCommand>();
             services.AddSingleton(s => s.GetServices<ICommand>().ToArray());
             services.AddHostedService<AnybotService>();
+            services.AddHostedService<DatabaseService>();
 
             return services;
         }
