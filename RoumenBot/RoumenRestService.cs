@@ -20,10 +20,10 @@ namespace RoumenBot
 
         public async Task<IEnumerable<RoumenImage<T>>> FetchImagesFromWeb()
         {
-            var request = new HttpRequestMessage(HttpMethod.Get, options.Value.DataUrl);
+            using var request = new HttpRequestMessage(HttpMethod.Get, options.Value.DataUrl);
             request.Headers.Add("Accept", "application/json, text/plain, */*");
             request.Headers.Add("x-requested-with", "xhr");
-            var response = await httpClient.SendAsync(request).ConfigureAwait(false);
+            using var response = await httpClient.SendAsync(request).ConfigureAwait(false);
 
             response.EnsureSuccessStatusCode();
 
