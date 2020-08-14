@@ -14,9 +14,9 @@ namespace RoumenBot
 
             foreach (var node in nodes)
             {
-                var commentLink = "https://www.rouming.cz/" + node.SelectSingleNode("./td[3]/a").Attributes["href"].Value;
                 var imageNode = node.SelectSingleNode("./td[7]/a");
-                var imageUrl = imageNode.Attributes["href"].Value.Replace("/roumingShow.php?file=", "/upload/");
+                var commentLink = imageNode.Attributes["href"].Value;
+                var imageUrl = commentLink.Replace("/roumingShow.php?file=", "/upload/");
                 var description = HtmlEntity.DeEntitize(imageNode.InnerText);
 
                 yield return new RoumenImage(imageUrl!, description!, commentLink!);

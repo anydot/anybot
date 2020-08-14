@@ -5,7 +5,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Telegram.Bot.Types.ReplyMarkups;
 
 namespace ActivePass.Tests
 {
@@ -27,6 +26,5 @@ namespace ActivePass.Tests
             Assert.IsNotNull(result[0].PartnerId);
             Assert.IsNotEmpty(result[0].PartnerId);
         }
-
     }
 }
