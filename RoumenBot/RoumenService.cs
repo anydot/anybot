@@ -64,10 +64,6 @@ namespace RoumenBot
                     }
                     db.Write(image.ImageUrl, image);
                 }
-                else
-                {
-                    logger.LogDebug($"Skipping existing image {image.ImageUrl}");
-                }
             }
 
             logger.LogInformation("Cleanup");

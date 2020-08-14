@@ -111,5 +111,35 @@ namespace Anybot.Common.Tests
 
             CollectionAssert.AreEquivalent(data, result);
         }
+
+        [Test]
+        public void IterateReturnsRightKey_IfThereAreKeyWithSimilarName()
+        {
+            var data = Enumerable.Range(0, 10).Select(_ => new TestModel { Id1 = Guid.NewGuid().ToString(), Id2 = Guid.NewGuid().ToString() }).ToList();
+            var result = new List<TestModel>();
+            var result2 = new List<TestModel>();
+            var db2 = new RocksWrapper<TestModel>(rocksDb, "prefixM");
+
+            foreach (var d in data)
+            {
+                db.Write(d.Id1, d);
+                db2.Write(d.Id1, d);
+            }
+
+            foreach (var kv in db.Iterate())
+            {
+                Assert.AreEqual(kv.Key, kv.Value.Id1);
+                result.Add(kv.Value);
+            }
+
+            foreach (var kv in db2.Iterate())
+            {
+                Assert.AreEqual(kv.Key, kv.Value.Id1);
+                result2.Add(kv.Value);
+            }
+
+            CollectionAssert.AreEquivalent(data, result);
+            CollectionAssert.AreEquivalent(data, result2);
+        }
     }
 }
