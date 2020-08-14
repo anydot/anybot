@@ -3,8 +3,8 @@ using System.Threading.Tasks;
 
 namespace RoumenBot
 {
-    public interface IRoumenRestService
+    public interface IRoumenRestService<T> where T : Tag, new()
     {
-        Task<IEnumerable<RoumenImage>> FetchImagesFromWeb();
+        Task<IEnumerable<RoumenImage<T>>> FetchImagesFromWeb();
     }
 }

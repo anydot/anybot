@@ -3,7 +3,6 @@ using System.Threading.Tasks;
 
 namespace Anybot.Common
 {
-
     public class NullDelayer : IDelayer
     {
         public async Task<T> Delay<T>(Func<Task<T>> delayedFunc)

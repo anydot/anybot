@@ -5,20 +5,20 @@ using System.Threading.Tasks;
 
 namespace RoumenBot
 {
-    public class RoumenRestService : IRoumenRestService
+    public class RoumenRestService<T> : IRoumenRestService<T> where T : Tag, new()
     {
-        private readonly IOptions<RoumenOptions> options;
+        private readonly IOptions<RoumenOptions<T>> options;
         private readonly HttpClient httpClient;
         private readonly IRoumenParser roumenParser;
 
-        public RoumenRestService(HttpClient httpClient, IOptions<RoumenOptions> options, IRoumenParser roumenParser)
+        public RoumenRestService(HttpClient httpClient, IOptions<RoumenOptions<T>> options, IRoumenParser roumenParser)
         {
             this.options = options;
             this.httpClient = httpClient;
             this.roumenParser = roumenParser;
         }
 
-        public async Task<IEnumerable<RoumenImage>> FetchImagesFromWeb()
+        public async Task<IEnumerable<RoumenImage<T>>> FetchImagesFromWeb()
         {
             var request = new HttpRequestMessage(HttpMethod.Get, options.Value.DataUrl);
             request.Headers.Add("Accept", "application/json, text/plain, */*");
@@ -27,7 +27,7 @@ namespace RoumenBot
 
             response.EnsureSuccessStatusCode();
 
-            return roumenParser.Parse(await response.Content.ReadAsStringAsync().ConfigureAwait(false));
+            return roumenParser.Parse<T>(await response.Content.ReadAsStringAsync().ConfigureAwait(false));
         }
     }
 }

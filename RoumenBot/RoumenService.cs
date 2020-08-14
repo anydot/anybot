@@ -10,17 +10,18 @@ using Telegram.Bot;
 
 namespace RoumenBot
 {
-    public class RoumenService : BackgroundService
+    public class RoumenService<T> : BackgroundService
+        where T : Tag, new()
     {
-        private readonly IRocksWrapper<RoumenImage> db;
+        private readonly IRocksWrapper<RoumenImage<T>> db;
         private readonly ITelegramBotClient bot;
-        private readonly ILogger<RoumenService> logger;
-        private readonly IRoumenRestService roumenRestService;
+        private readonly ILogger<RoumenService<T>> logger;
+        private readonly IRoumenRestService<T> roumenRestService;
         private readonly TimeSpan refreshDelay;
         private readonly IDelayer delayer;
-        private readonly IOptions<RoumenOptions> options;
+        private readonly IOptions<RoumenOptions<T>> options;
 
-        public RoumenService(IOptions<RoumenOptions> options, ILogger<RoumenService> logger, IRocksWrapper<RoumenImage> db, ITelegramBotClient bot, IRoumenRestService roumenRestService, IDelayer delayer)
+        public RoumenService(IOptions<RoumenOptions<T>> options, ILogger<RoumenService<T>> logger, IRocksWrapper<RoumenImage<T>> db, ITelegramBotClient bot, IRoumenRestService<T> roumenRestService, IDelayer delayer)
         {
             _ = options.Value.ChatId ?? throw new ArgumentOutOfRangeException(nameof(options), "options don't contain the chatID");
             refreshDelay = options.Value.RefreshDelay;
@@ -33,7 +34,7 @@ namespace RoumenBot
             this.options = options;
         }
 
-        public string FormatImage(RoumenImage p)
+        public string FormatImage(RoumenImage<T> p)
         {
             return string.Format("[{0}]({1})", bot.Quote(p.Description), bot.Quote(p.CommentLink));
         }
@@ -45,7 +46,6 @@ namespace RoumenBot
             foreach (var image in allImages)
             {
                 cancellationToken.ThrowIfCancellationRequested();
-
 
                 if (!db.TryRead(image.ImageUrl, out var _))
                 {

@@ -64,6 +64,22 @@ namespace RoumenBot.Tests {
         ///   Looks up a localized string similar to &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
         ///&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xml:lang=&quot;cs&quot; lang=&quot;cs&quot;&gt;
         ///&lt;head&gt;
+        ///&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;/&gt;
+        ///&lt;meta http-equiv=&quot;Content-language&quot; content=&quot;cs&quot;/&gt;
+        ///&lt;meta name=&quot;keywords&quot; content=&quot;maso, erotika, nehody, mrtvoly, fotky, foto, Roumen, Rouming&quot;/&gt;
+        ///&lt;title&gt;Roumenovo Maso - obrázky, které jste (ne)chtěli vidět&lt;/title&gt;
+        ///&lt;link rel=&quot;shortcut icon [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string MasoPage {
+            get {
+                return ResourceManager.GetString("MasoPage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+        ///&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xml:lang=&quot;cs&quot; lang=&quot;cs&quot;&gt;
+        ///&lt;head&gt;
         ///&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;/&gt;
         ///&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;/&gt;
         ///&lt;meta http-equiv=&quot;Content-language&quot; content=&quot;cs&quot; /&gt;

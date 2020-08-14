@@ -2,7 +2,7 @@
 
 namespace RoumenBot
 {
-    public sealed class RoumenImage : IEquatable<RoumenImage>
+    public sealed class RoumenImage<T> : IEquatable<RoumenImage<T>> where T : Tag
     {
         public RoumenImage(string imageUrl, string description, string commentLink)
         {
@@ -17,10 +17,10 @@ namespace RoumenBot
 
         public override bool Equals(object? obj)
         {
-            return Equals(obj as RoumenImage);
+            return Equals(obj as RoumenImage<T>);
         }
 
-        public bool Equals(RoumenImage? other)
+        public bool Equals(RoumenImage<T>? other)
         {
             return other != null &&
                 ImageUrl == other.ImageUrl &&

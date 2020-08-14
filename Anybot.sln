@@ -20,7 +20,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Anybot.Common", "Anybot.Com
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Anybot.Common.Tests", "Anybot.Common.Tests\Anybot.Common.Tests.csproj", "{22FEB1D0-385F-4F7E-9963-17DB566638A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActivePass.Tests", "ActivePass.Tests\ActivePass.Tests.csproj", "{7D22B8C1-0949-4424-85A4-EFA6238A524E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ActivePass.Tests", "ActivePass.Tests\ActivePass.Tests.csproj", "{7D22B8C1-0949-4424-85A4-EFA6238A524E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
