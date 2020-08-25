@@ -3,8 +3,7 @@ WORKDIR /source
 
 # copy csproj and restore as distinct layers
 COPY . .
-RUN dotnet restore
-RUN dotnet publish -c release -o /app --no-restore 
+RUN dotnet restore && dotnet build --no-restore && dotnet test && dotnet publish -c release -o /app --no-restore 
 
 # final stage/image
 FROM mcr.microsoft.com/dotnet/core/runtime:3.1
