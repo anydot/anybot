@@ -5,6 +5,6 @@ namespace ActivePass
 {
     public interface IActivePassRestService
     {
-        Task<IEnumerable<Partner>?> FetchPartnersFromWeb();
+        Task<IEnumerable<Partner>> FetchPartnersFromWeb();
     }
 }
