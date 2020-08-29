@@ -1,6 +1,5 @@
-﻿using System;
+﻿using HtmlAgilityPack;
 using System.Collections.Generic;
-using HtmlAgilityPack;
 
 namespace RoumenBot
 {

@@ -1,11 +1,11 @@
-﻿using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Anybot.Common;
 using Microsoft.Extensions.Configuration;
-using Polly.Extensions.Http;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using Polly;
-using System;
-using Anybot.Common;
+using Polly.Extensions.Http;
 using RocksDbSharp;
+using System;
 
 namespace RoumenBot
 {

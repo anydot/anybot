@@ -116,7 +116,8 @@ namespace ActivePass
                 {
                     TryFormatImage(partner, out var imageUrl);
 
-                    if (!options.Value.Silent) {
+                    if (!options.Value.Silent)
+                    {
                         await delayer.Delay(async () => await bot.MessageWithOptionalImage((long)options.Value.ChatId!, FormatPartner(partner, prefix), imageUrl).ConfigureAwait(false)).ConfigureAwait(false);
                     }
 

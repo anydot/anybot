@@ -24,7 +24,7 @@ namespace ActivePass.Tests
         private Mock<IActivePassRestService> restServiceMock;
 
         [SetUp]
-        public void Setup ()
+        public void Setup()
         {
             mocks = new MockRepository(MockBehavior.Strict);
 
@@ -77,7 +77,7 @@ namespace ActivePass.Tests
             var partnerDb = new Partner("s", "m", "key", null, "", "", "", "", "", "");
 
             restServiceMock.Setup(r => r.FetchPartnersFromWeb()).ReturnsAsync(new List<Partner> { partner });
-            dbMock.Setup(d => d.Iterate()).Returns(new List<KeyValuePair<string, Partner>> { new KeyValuePair<string, Partner>("key", partnerDb)});
+            dbMock.Setup(d => d.Iterate()).Returns(new List<KeyValuePair<string, Partner>> { new KeyValuePair<string, Partner>("key", partnerDb) });
             dbMock.Setup(d => d.Write("key", partner));
             WithSendMessage(botMock, 42, s => s.Contains("key") && s.Contains("Updated")).ReturnsAsync(Mock.Of<Telegram.Bot.Types.Message>());
 
