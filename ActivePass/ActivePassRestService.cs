@@ -20,7 +20,7 @@ namespace ActivePass
             this.httpClient = httpClient;
         }
 
-        public async Task<IEnumerable<Partner>?> FetchPartnersFromWeb()
+        public async Task<IEnumerable<Partner>> FetchPartnersFromWeb()
         {
             using var request = new HttpRequestMessage(HttpMethod.Get, options.Value.DataUrl);
             request.Headers.Add("Accept", "application/json, text/plain, */*");
@@ -30,7 +30,7 @@ namespace ActivePass
             response.EnsureSuccessStatusCode();
 
             var data = await JToken.ReadFromAsync(new JsonTextReader(new StreamReader(await response.Content.ReadAsStreamAsync().ConfigureAwait(false)))).ConfigureAwait(false);
-            return data?["results"]?["partners"]?.Children().Select(p => p.ToObject<Partner>());
+            return data?["results"]?["partners"]?.Children().Select(p => p.ToObject<Partner>()) ?? Enumerable.Empty<Partner>();
         }
     }
 }
