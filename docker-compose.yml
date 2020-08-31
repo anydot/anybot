@@ -1,0 +1,8 @@
+version: '3'
+services: 
+  anybot:
+    image: "anydot/anybot"
+    volumes: 
+      - ../data:/data
+    container_name: anybot
+
