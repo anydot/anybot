@@ -1,4 +1,5 @@
 ARG SNAPPYVER=1.1.7-1
+ARG RELEASE=false
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /source
@@ -7,6 +8,7 @@ COPY . .
 RUN apt-get update && \
     apt-get install -y --no-install-recommends libsnappy1v5=1.1.7-1 && \
     ln -s /lib/x86_64-linux-gnu/libdl.so.2 /lib/x86_64-linux-gnu/libdl.so && \
+    echo $RELEASE && \
     dotnet restore && dotnet build --no-restore && dotnet test && dotnet publish -c release -o /app --no-restore 
 
 # final stage/image
