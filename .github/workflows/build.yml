@@ -18,6 +18,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: hadolint
+        uses: reviewdog/action-hadolint@v1
+        with:
+          fail_on_error: ${{ ! startsWith(github.ref, 'refs/pull/') }}
+
       - name: Build and push Docker images
         uses: docker/build-push-action@v1
         with:
