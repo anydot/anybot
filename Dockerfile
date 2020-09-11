@@ -16,7 +16,7 @@ RUN \
     ln -s /lib/x86_64-linux-gnu/libdl.so.2 /lib/x86_64-linux-gnu/libdl.so && \
     dotnet build -c "$CONFIGURATION" && \
     if [ "$RELEASE" != "true" ] ; then echo [*] Running tests; dotnet test -c "$CONFIGURATION"; echo [*] Done; fi && \
-    dotnet publish -c "$CONFIGURATION" -o /app -r linux-x64 --self-contained true -p:PublishReadyToRun=false -p:PublishTrimmed=true -p:SuppressTrimAnalysisWarning=false -p:TrimMode=link -p:PublishSingleFile=true -p:DebugType=none Anybot && \
+    dotnet publish -c "$CONFIGURATION" -o /app -r linux-x64 -p:PublishReadyToRun=false -p:PublishTrimmed=true -p:SuppressTrimAnalysisWarning=false -p:TrimMode=link -p:PublishSingleFile=true -p:DebugType=none Anybot && \
     du -h /app
 
 # final stage/image
