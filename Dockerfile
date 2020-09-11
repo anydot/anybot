@@ -8,7 +8,8 @@ WORKDIR /source
 
 COPY . .
 RUN \
-    export CONFIGURATION=$(if [ "$RELEASE" = "true" ] ; then echo Release; else echo "Debug"; fi) && \
+    CONFIGURATION=$(if [ "$RELEASE" = "true" ] ; then echo Release; else echo "Debug"; fi) && \
+    export CONFIGURATION && \
     echo "Build envs:" && env && echo "======" && \
     apt-get update && \
     apt-get install -y --no-install-recommends libsnappy1v5=$SNAPPYVER && \
