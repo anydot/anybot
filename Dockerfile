@@ -1,5 +1,7 @@
-FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 ARG SNAPPYVER=1.1.7-1
+
+FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
+ARG SNAPPYVER
 ARG RELEASE=false
 
 WORKDIR /source
@@ -9,7 +11,7 @@ RUN \
     export CONFIGURATION=$(if [ "$RELEASE" = "true" ] ; then echo Release; else echo "Debug"; fi) && \
     echo "Build envs:" && env && echo "======" && \
     apt-get update && \
-    apt-get install -y --no-install-recommends libsnappy1v5=1.1.7-1 && \
+    apt-get install -y --no-install-recommends libsnappy1v5=$SNAPPYVER && \
     ln -s /lib/x86_64-linux-gnu/libdl.so.2 /lib/x86_64-linux-gnu/libdl.so && \
     dotnet build -c $CONFIGURATION && \
     if [ "$RELEASE" != "true" ] ; then echo [*] Running tests; dotnet test ; echo [*] Done; fi && \
@@ -18,12 +20,14 @@ RUN \
 
 # final stage/image
 FROM mcr.microsoft.com/dotnet/runtime:5.0
+ARG SNAPPYVER
+
 WORKDIR /app
 COPY --from=build /app .
 RUN \
     mkdir /data && \
     apt-get update && \
-    apt-get install -y --no-install-recommends libsnappy1v5=1.1.7-1 && \
+    apt-get install -y --no-install-recommends libsnappy1v5=$SNAPPYVER && \
     ln -s /lib/x86_64-linux-gnu/libdl.so.2 /lib/x86_64-linux-gnu/libdl.so && \
     rm -fr /var/cache/apt/archives/* /var/lib/apt/lists/*
 
