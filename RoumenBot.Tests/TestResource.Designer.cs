@@ -90,5 +90,28 @@ namespace RoumenBot.Tests {
                 return ResourceManager.GetString("RoumingPage", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ﻿{
+        ///  &quot;Anybot&quot;: {
+        ///    &quot;Token&quot;: &quot;1391265589:sometoken&quot;,
+        ///    &quot;Database&quot;: &quot;anybot.db&quot;
+        ///  },
+        ///  &quot;Roumen&quot;: {
+        ///    &quot;ChatId&quot;: -1001346659992,
+        ///    &quot;DataUrl&quot;: &quot;https://www.rouming.cz/&quot;
+        ///  },
+        ///  &quot;RoumenMaso&quot;: {
+        ///    &quot;ChatId&quot;: -1001143946590,
+        ///    &quot;DataUrl&quot;: &quot;https://www.roumenovomaso.cz/?agree=on&quot;
+        ///  },
+        ///  &quot;Activepass&quot;: {
+        ///    &quot;DataUrl&quot;: &quot;https://www.activepass.cz/aktivity?activities=%5B%5D&amp;locations=%5B%22Praha%22%5D&amp;gps_latitude=-1&amp;gps_longitude=-1&amp;orderBy=asc&amp;page=1&amp;resultsPerPage=1800&amp;searchString=&amp;partnerSear [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string TestConfig {
+            get {
+                return ResourceManager.GetString("TestConfig", resourceCulture);
+            }
+        }
     }
 }

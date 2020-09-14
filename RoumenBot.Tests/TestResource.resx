@@ -2167,4 +2167,30 @@ document.write ('&lt;img src="https://toplist.cz/dot.asp?id=169028&amp;https='+e
 &lt;/body&gt;
 &lt;/html&gt;</value>
   </data>
+  <data name="TestConfig" xml:space="preserve">
+    <value>﻿{
+  "Anybot": {
+    "Token": "1391265589:sometoken",
+    "Database": "anybot.db"
+  },
+  "Roumen": {
+    "ChatId": -1001346659992,
+    "DataUrl": "https://www.rouming.cz/"
+  },
+  "RoumenMaso": {
+    "ChatId": -1001143946590,
+    "DataUrl": "https://www.roumenovomaso.cz/?agree=on"
+  },
+  "Activepass": {
+    "DataUrl": "https://www.activepass.cz/aktivity?activities=%5B%5D&amp;locations=%5B%22Praha%22%5D&amp;gps_latitude=-1&amp;gps_longitude=-1&amp;orderBy=asc&amp;page=1&amp;resultsPerPage=1800&amp;searchString=&amp;partnerSearch=true&amp;activitySearch=false&amp;view=list&amp;sortBy=alphabet&amp;max_north=0&amp;max_east=0&amp;min_north=0&amp;min_east=0&amp;max_north=undefined&amp;max_east=undefined&amp;min_north=undefined&amp;min_east=undefined",
+    "ChatId": -1001458601602
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default" : "Warning",
+      "Microsoft.Extensions.Http.DefaultHttpClientFactory": "Information"
+    }
+  }
+}</value>
+  </data>
 </root>
