@@ -1,12 +1,16 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="RocksDB" Version="6.11.4.12240" />
+    <PackageReference Include="RocksDbSharp" Version="6.2.2" />
     <PackageReference Include="Telegram.Bot" Version="15.7.1" />
   </ItemGroup>
+
+	<ItemGroup Condition="$(OS) == 'Windows_NT'">
+		<PackageReference Include="RocksDbNative" Version="6.2.2" />
+	</ItemGroup>
 
 </Project>
