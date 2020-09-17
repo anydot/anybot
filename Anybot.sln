@@ -12,6 +12,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{18B4BAC0-99E3-46EA-BDC3-223589761DBE}"
 	ProjectSection(SolutionItems) = preProject
 		Directory.Build.Props = Directory.Build.Props
+		Dockerfile = Dockerfile
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoumenBot.Tests", "RoumenBot.Tests\RoumenBot.Tests.csproj", "{B696EC25-54A1-4F48-BACE-D0FE47F1D3D8}"

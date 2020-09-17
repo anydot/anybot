@@ -11,13 +11,15 @@ WORKDIR /source
 
 COPY . .
 RUN \
-    CONFIGURATION=$(if [ "$RELEASE" = "true" ] ; then echo Release; else echo "Debug"; fi) && \
+    CONFIGURATION=$(if [ "$RELEASE" = "true" ] ; then echo "Release"; else echo "Debug"; fi) && \
     export CONFIGURATION && \
     echo "Build envs:" && env && echo "======" && \
     mkdir /tmp/packages && wget -qO - $APORT | tar xC /tmp/packages && apk add --no-cache --allow-untrusted /tmp/packages/rocksdb-$ROCKSVER.apk && rm -fr /tmp/packages && \
-    dotnet build -c "$CONFIGURATION" && \
-    if [ "$RELEASE" != "true" ] ; then echo [*] Running tests; dotnet test -c "$CONFIGURATION"; echo [*] Done; fi && \
-    dotnet publish -c "$CONFIGURATION" -o /app -r alpine-x64 -p:PublishReadyToRun=false --self-contained true -p:PublishTrimmed=true -p:SuppressTrimAnalysisWarning=false -p:TrimMode=link -p:PublishSingleFile=true -p:DebugType=none Anybot && \
+    ln -s /usr/lib/librocksdb.so.6 /usr/lib/librocksdb.so && \
+    echo [*] Running tests && \
+    dotnet test -c "$CONFIGURATION" && \
+    echo [*] Done && \
+    dotnet publish -c "$CONFIGURATION" -o /app -r alpine-x64 --self-contained true Anybot && \
     du -h /app
 
 # final stage/image
@@ -31,8 +33,7 @@ RUN \
     mkdir /data && \
     apk add --no-cache krb5-libs && \
     mkdir /tmp/packages && wget -qO - $APORT | tar xC /tmp/packages && apk add --no-cache --allow-untrusted /tmp/packages/rocksdb-$ROCKSVER.apk && rm -fr /tmp/packages && \
-    ln -s /usr/lib/librocksdb.so.6 /app/librocksdb.so
-
+    ln -s /usr/lib/librocksdb.so.6 /usr/lib/librocksdb.so
 
 VOLUME /data
 ENV Bot__Database=/data
