@@ -1,37 +1,21 @@
 <Project>
-  <ItemGroup>
-    <PackageReference Include="Microsoft.Net.Compilers.Toolset" Version="3.7.0" />    
-  </ItemGroup>
-  <PropertyGroup>
-    <LangVersion>9.0</LangVersion>
-    <Nullable>enable</Nullable>
-	<AnalysisLevel>5</AnalysisLevel>
-  </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="SonarAnalyzer.CSharp" Version="8.13.0.21683" />
-	<TrimmerRootAssembly Include="System.ComponentModel.TypeConverter" />
-  </ItemGroup>
-  <ItemGroup Condition="$(MSBuildProjectName.EndsWith('Tests'))">
-    <PackageReference Include="NUnit" Version="3.12.0" />
-    <PackageReference Include="NUnit3TestAdapter" Version="3.17.0" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.1" />
-    <PackageReference Include="Moq" Version="4.14.5" />
-  </ItemGroup>
-  <PropertyGroup Condition="$(MSBuildProjectName.EndsWith('Tests'))">
-    <Nullable>disable</Nullable>
-  </PropertyGroup>
-  <ItemGroup Condition="!$(MSBuildProjectName.EndsWith('Tests'))">
-    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
-      <_Parameter1>$(AssemblyName).Tests</_Parameter1>
-    </AssemblyAttribute>
-  </ItemGroup>
-    <PropertyGroup>
-	    <PublishReadyToRun>false</PublishReadyToRun>
-	    <PublishTrimmed>true</PublishTrimmed>
-	    <PublishReadyToRunShowWarnings>true</PublishReadyToRunShowWarnings>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Net.Compilers.Toolset" Version="3.7.0" />
+	</ItemGroup>
+	<PropertyGroup>
+		<LangVersion>9.0</LangVersion>
+		<Nullable>enable</Nullable>
+		<AnalysisLevel>5</AnalysisLevel>
+		<PublishReadyToRun>false</PublishReadyToRun>
+		<PublishTrimmed>true</PublishTrimmed>
+		<PublishReadyToRunShowWarnings>true</PublishReadyToRunShowWarnings>
 		<SuppressTrimAnalysisWarning>false</SuppressTrimAnalysisWarning>
 		<TrimMode>link</TrimMode>
 		<DebugType>none</DebugType>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="$(MSBuildProjectName.EndsWith('Tests'))">
+		<Nullable>disable</Nullable>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="$(OS) == 'Windows_NT'">
@@ -41,4 +25,21 @@
 	<PropertyGroup Condition="$(OS) != 'Windows_NT'">
 		<RuntimeIdentifier>alpine-x64</RuntimeIdentifier>
 	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="SonarAnalyzer.CSharp" Version="8.13.0.21683" />
+		<TrimmerRootAssembly Include="System.ComponentModel.TypeConverter" />
+	</ItemGroup>
+	<ItemGroup Condition="$(MSBuildProjectName.EndsWith('Tests'))">
+		<PackageReference Include="NUnit" Version="3.12.0" />
+		<PackageReference Include="NUnit3TestAdapter" Version="3.17.0" />
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.1" />
+		<PackageReference Include="Moq" Version="4.14.5" />
+	</ItemGroup>
+
+	<ItemGroup Condition="!$(MSBuildProjectName.EndsWith('Tests'))">
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
+			<_Parameter1>$(AssemblyName).Tests</_Parameter1>
+		</AssemblyAttribute>
+	</ItemGroup>
 </Project>
