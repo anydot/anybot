@@ -57,6 +57,10 @@ namespace RoumenBot
                         {
                             await delayer.Delay(async () => await bot.MessageWithOptionalImage((long)options.Value.ChatId!, FormatImage(image), image.ImageUrl).ConfigureAwait(false)).ConfigureAwait(false);
                         }
+                        catch (Telegram.Bot.Exceptions.ApiRequestException e) when (e.Message.Contains("wrong file identifier/HTTP URL specified"))
+                        {
+                            logger.LogInformation(e, $"Ignoring image publish {image.ImageUrl}");
+                        }
                         catch (Exception e)
                         {
                             logger.LogError(e, $"Can't process image {image}");

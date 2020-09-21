@@ -118,7 +118,15 @@ namespace ActivePass
 
                     if (!options.Value.Silent)
                     {
-                        await delayer.Delay(async () => await bot.MessageWithOptionalImage((long)options.Value.ChatId!, FormatPartner(partner, prefix), imageUrl).ConfigureAwait(false)).ConfigureAwait(false);
+                        try
+                        {
+                            await delayer.Delay(async () => await bot.MessageWithOptionalImage((long)options.Value.ChatId!, FormatPartner(partner, prefix), imageUrl).ConfigureAwait(false)).ConfigureAwait(false);
+                        }
+                        catch (Telegram.Bot.Exceptions.ApiRequestException e) when (e.Message.Contains("wrong file identifier/HTTP URL specified"))
+                        {
+                            logger.LogInformation(e, $"Ignoring image {partner.ImageUrl} for partner {partner.PartnerId} due to invalid image");
+                            await delayer.Delay(async() => await bot.MessageWithOptionalImage((long)options.Value.ChatId!, FormatPartner(partner, prefix), null).ConfigureAwait(false)).ConfigureAwait(false);
+                        }
                     }
 
                     action(partner);
