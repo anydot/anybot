@@ -27,7 +27,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="SonarAnalyzer.CSharp" Version="8.13.0.21683" />
+		<PackageReference Include="SonarAnalyzer.CSharp" Version="8.13.1.21947" />
 		<TrimmerRootAssembly Include="System.ComponentModel.TypeConverter" />
 	</ItemGroup>
 	<ItemGroup Condition="$(MSBuildProjectName.EndsWith('Tests'))">
