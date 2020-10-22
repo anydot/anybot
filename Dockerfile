@@ -1,20 +1,21 @@
-ARG APORTVER=v1
 ARG ROCKSVER=6.11.4-r1
-ARG APORT="https://github.com/anydot/anydot.aports/releases/download/$APORTVER/packages"
+ARG REPOURL="https://alpine-repo.anydot.in/main"
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0-alpine AS build
-ARG APORT
 ARG ROCKSVER
+ARG REPOURL
 ARG RELEASE=false
 
 WORKDIR /source
 
 COPY . .
+COPY alpine-repo.anydot.in.pub /etc/apk/keys/
 RUN \
     CONFIGURATION=$(if [ "$RELEASE" = "true" ] ; then echo "Release"; else echo "Debug"; fi) && \
     export CONFIGURATION && \
     echo "Build envs:" && env && echo "======" && \
-    mkdir /tmp/packages && wget -qO - $APORT | tar xC /tmp/packages && apk add --no-cache --allow-untrusted /tmp/packages/rocksdb-$ROCKSVER.apk && rm -fr /tmp/packages && \
+    echo "$REPOURL" >> /etc/apk/repositories && \
+    apk add --no-cache rocksdb=$ROCKSVER && \
     ln -s /usr/lib/librocksdb.so.6 /usr/lib/librocksdb.so && \
     echo [*] Running tests && \
     dotnet test -c "$CONFIGURATION" && \
@@ -23,16 +24,17 @@ RUN \
     du -h /app
 
 # final stage/image
-FROM alpine:3.12
-ARG APORT
+FROM alpine:3.12.1
 ARG ROCKSVER
+ARG REPOURL
 
 WORKDIR /app
 COPY --from=build /app .
+COPY alpine-repo.anydot.in.pub /etc/apk/keys/
 RUN \
     mkdir /data && \
-    apk add --no-cache krb5-libs && \
-    mkdir /tmp/packages && wget -qO - $APORT | tar xC /tmp/packages && apk add --no-cache --allow-untrusted /tmp/packages/rocksdb-$ROCKSVER.apk && rm -fr /tmp/packages && \
+    echo "$REPOURL" >> /etc/apk/repositories && \
+    apk add --no-cache krb5-libs=1.18.2-r0 rocksdb=$ROCKSVER && \
     ln -s /usr/lib/librocksdb.so.6 /usr/lib/librocksdb.so
 
 VOLUME /data
