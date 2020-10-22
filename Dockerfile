@@ -1,4 +1,4 @@
-ARG APORTVER=v1
+ARG APORTVER=v2
 ARG ROCKSVER=6.11.4-r1
 ARG APORT="https://github.com/anydot/anydot.aports/releases/download/$APORTVER/packages"
 
@@ -6,6 +6,7 @@ FROM mcr.microsoft.com/dotnet/sdk:5.0-alpine AS build
 ARG APORT
 ARG ROCKSVER
 ARG RELEASE=false
+SHELL ["/bin/ash", "-eo", "pipefail", "-c"]
 
 WORKDIR /source
 
@@ -23,9 +24,10 @@ RUN \
     du -h /app
 
 # final stage/image
-FROM alpine:3.12
+FROM alpine:3.12.1
 ARG APORT
 ARG ROCKSVER
+SHELL ["/bin/ash", "-eo", "pipefail", "-c"]
 
 WORKDIR /app
 COPY --from=build /app .
