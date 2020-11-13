@@ -22,7 +22,7 @@ namespace Anybot
 
         private static void ConfigureServices(HostBuilderContext context, IServiceCollection services)
         {
-            services.AddSingleton<IDelayer>(services => new Delayer(services.GetService<IOptions<AnybotOptions>>().Value.PostDelay));
+            services.AddSingleton<IDelayer>(services => new Delayer(services.GetRequiredService<IOptions<AnybotOptions>>().Value.PostDelay));
             services.WithRoumen(context);
             services.WithActivePass(context);
             services.WithAnybot(context);

@@ -20,7 +20,7 @@ namespace ActivePass
             services.AddHttpClient<IActivePassRestService, ActivePassRestService>()
                 .AddPolicyHandler(HttpPolicyExtensions.HandleTransientHttpError().WaitAndRetryAsync(4, retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt))));
             services.AddHostedService<ActivePassService>();
-            services.AddSingleton<IRocksWrapper<Partner>>(s => new RocksWrapper<Partner>(s.GetService<RocksDb>(), DbPrefix));
+            services.AddSingleton<IRocksWrapper<Partner>>(s => new RocksWrapper<Partner>(s.GetRequiredService<RocksDb>(), DbPrefix));
 
             return services;
         }
