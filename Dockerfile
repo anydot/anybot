@@ -18,9 +18,9 @@ RUN \
     apk add --no-cache rocksdb=$ROCKSVER && \
     ln -s /usr/lib/librocksdb.so.6 /usr/lib/librocksdb.so && \
     echo [*] Running tests && \
-    dotnet test -c "$CONFIGURATION" && \
+    dotnet test -c "$CONFIGURATION" /p:TreatWarningsAsErrors=true && \
     echo [*] Done && \
-    dotnet publish -c "$CONFIGURATION" -o /app -r alpine-x64 --self-contained true Anybot && \
+    dotnet publish -c "$CONFIGURATION" -o /app -r alpine-x64 --self-contained true /p:TreatWarningsAsErrors=true Anybot && \
     du -h /app
 
 # final stage/image
