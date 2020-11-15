@@ -46,6 +46,7 @@ namespace RoumenBot
             foreach (var image in allImages)
             {
                 cancellationToken.ThrowIfCancellationRequested();
+                bool writeToDb = true;
 
                 if (!db.TryRead(image.ImageUrl, out var _))
                 {
@@ -64,9 +65,14 @@ namespace RoumenBot
                         catch (Exception e)
                         {
                             logger.LogError(e, $"Can't process image {image}");
+                            writeToDb = false;
                         }
                     }
-                    db.Write(image.ImageUrl, image);
+
+                    if (writeToDb)
+                    {
+                        db.Write(image.ImageUrl, image);
+                    }
                 }
             }
 
