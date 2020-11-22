@@ -35,13 +35,13 @@ namespace Anybot
         {
             cts = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken);
 
-            var botDetails = await bot.GetMeAsync().ConfigureAwait(false);
+            var botDetails = await bot.GetMeAsync(cts.Token).ConfigureAwait(false);
             botPostfix = $"@{botDetails.Username}";
 
             logger.LogInformation($"Starting bot: {botDetails.Username}");
             logger.LogInformation("Starting receiving commands: {0}", string.Join(',', commands.Select(c => c.CommandName)));
 
-            await bot.SetMyCommandsAsync(commands.Select(c => new BotCommand { Command = c.CommandName, Description = c.CommandDescription })).ConfigureAwait(false);
+            await bot.SetMyCommandsAsync(commands.Select(c => new BotCommand { Command = c.CommandName, Description = c.CommandDescription }), cts.Token).ConfigureAwait(false);
 
             bot.StartReceiving(this, cts.Token);
         }

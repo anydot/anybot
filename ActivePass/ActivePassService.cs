@@ -45,7 +45,7 @@ namespace ActivePass
 
         private string FormatPartner(Partner p, string prefix)
         {
-            StringBuilder sb = new StringBuilder(prefix);
+            var sb = new StringBuilder(prefix);
 
             sb.AppendFormat("[{0}]({1})\n", bot.Quote(p.Company), bot.Quote("https://www.activepass.cz/partner/" + p.PartnerId));
             sb.AppendFormat("{0}\n{1}", bot.Quote(p.Address), bot.Quote(p.District));

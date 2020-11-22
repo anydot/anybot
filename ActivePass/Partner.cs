@@ -54,7 +54,7 @@ namespace ActivePass
 
         public override int GetHashCode()
         {
-            HashCode hash = new HashCode();
+            var hash = new HashCode();
             hash.Add(Company);
             hash.Add(Website);
             hash.Add(PartnerId);
