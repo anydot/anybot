@@ -45,4 +45,10 @@
 		</AssemblyAttribute>
 	</ItemGroup>
 
+	<ItemGroup Condition="$(MSBuildProjectName.EndsWith('Tests'))">
+		<AssemblyAttribute Include="System.Resources.NeutralResourcesLanguageAttribute">
+			<_Parameter1>en</_Parameter1>
+		</AssemblyAttribute>
+	</ItemGroup>
+
 </Project>

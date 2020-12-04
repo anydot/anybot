@@ -13,6 +13,7 @@
     <ProjectReference Include="..\ActivePass\ActivePass.csproj" />
     <ProjectReference Include="..\Anybot.Common\Anybot.Common.csproj" />
     <ProjectReference Include="..\RoumenBot\RoumenBot.csproj" />
+    <ProjectReference Include="..\Sreality\Sreality.csproj" />
   </ItemGroup>
 
   <ItemGroup>
