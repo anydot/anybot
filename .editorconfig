@@ -1,0 +1,7 @@
+﻿[*.cs]
+
+# S1123: "Obsolete" attributes should include explanations
+dotnet_diagnostic.S1123.severity = none
+
+# CA1041: Provide ObsoleteAttribute message
+dotnet_diagnostic.CA1041.severity = none
