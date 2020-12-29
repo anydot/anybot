@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Options;
+using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -21,13 +22,15 @@ namespace RoumenBot
         public async Task<IEnumerable<RoumenImage<T>>> FetchImagesFromWeb()
         {
             using var request = new HttpRequestMessage(HttpMethod.Get, options.Value.DataUrl);
+            var baseUrl = new Uri(options.Value.DataUrl!).GetLeftPart(UriPartial.Authority);
+
             request.Headers.Add("Accept", "application/json, text/plain, */*");
             request.Headers.Add("x-requested-with", "xhr");
             using var response = await httpClient.SendAsync(request).ConfigureAwait(false);
 
             response.EnsureSuccessStatusCode();
 
-            return roumenParser.Parse<T>(await response.Content.ReadAsStringAsync().ConfigureAwait(false));
+            return roumenParser.Parse<T>(await response.Content.ReadAsStringAsync().ConfigureAwait(false), baseUrl);
         }
     }
 }

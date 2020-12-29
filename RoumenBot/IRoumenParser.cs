@@ -4,6 +4,6 @@ namespace RoumenBot
 {
     public interface IRoumenParser
     {
-        IEnumerable<RoumenImage<T>> Parse<T>(string roumingPage) where T : Tag, new();
+        IEnumerable<RoumenImage<T>> Parse<T>(string roumingPage, string baseUrl) where T : Tag, new();
     }
 }
