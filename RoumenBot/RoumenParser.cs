@@ -5,7 +5,7 @@ namespace RoumenBot
 {
     public class RoumenParser : IRoumenParser
     {
-        public IEnumerable<RoumenImage<T>> Parse<T>(string roumingPage) where T : Tag, new()
+        public IEnumerable<RoumenImage<T>> Parse<T>(string roumingPage, string baseUrl) where T : Tag, new()
         {
             var doc = new HtmlDocument();
 
@@ -16,8 +16,15 @@ namespace RoumenBot
             {
                 var imageNode = node.SelectSingleNode($"./td[{Tag.ImageTdIndex<T>()}]/a");
                 var commentLink = imageNode.Attributes["href"].Value;
+
+                if (!commentLink!.StartsWith("https://"))
+                {
+                    commentLink = baseUrl + "/" + commentLink;
+                }
+
                 var imageUrl = commentLink.Replace(Tag.ShowPrefix<T>(), "/upload/");
                 var description = HtmlEntity.DeEntitize(imageNode.InnerText);
+
 
                 yield return new RoumenImage<T>(imageUrl!, description!, commentLink!);
             }
