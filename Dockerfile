@@ -24,7 +24,7 @@ RUN \
     du -h /app
 
 # final stage/image
-FROM alpine:3.13.4
+FROM alpine:3.13.5
 ARG ROCKSVER
 ARG REPOURL
 
