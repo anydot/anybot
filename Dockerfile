@@ -1,7 +1,7 @@
 ARG ROCKSVER=6.11.4-r1
 ARG REPOURL="https://alpine-repo.anydot.in/main"
 
-FROM mcr.microsoft.com/dotnet/sdk:5.0-alpine AS build
+FROM mcr.microsoft.com/dotnet/sdk:6.0-alpine AS build
 ARG ROCKSVER
 ARG REPOURL
 ARG RELEASE=false
