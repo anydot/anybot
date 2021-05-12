@@ -7,7 +7,7 @@
 		<PublishTrimmed>true</PublishTrimmed>
 		<PublishReadyToRunShowWarnings>true</PublishReadyToRunShowWarnings>
 		<SuppressTrimAnalysisWarning>false</SuppressTrimAnalysisWarning>
-		<TrimMode>link</TrimMode>
+		<TrimMode>copyused</TrimMode>
 		<DebugType>none</DebugType>
 	</PropertyGroup>
 
