@@ -25,7 +25,6 @@ namespace RoumenBot
                 var imageUrl = commentLink.Replace(Tag.ShowPrefix<T>(), "/upload/");
                 var description = HtmlEntity.DeEntitize(imageNode.InnerText);
 
-
                 yield return new RoumenImage<T>(imageUrl!, description!, commentLink!);
             }
         }
