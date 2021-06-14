@@ -104,7 +104,7 @@ namespace ActivePass.Tests
 
         public static Moq.Language.Flow.ISetup<ITelegramBotClient, Task<Telegram.Bot.Types.Message>> WithSendMessage(Mock<ITelegramBotClient> bot, long chatid, Expression<Func<string, bool>> msgMatch)
         {
-            return bot.Setup(b => b.SendTextMessageAsync(It.Is<Telegram.Bot.Types.ChatId>(c => c.Identifier == chatid), It.Is(msgMatch), Telegram.Bot.Types.Enums.ParseMode.MarkdownV2, It.IsAny<bool>(), It.IsAny<bool>(), It.IsAny<int>(), It.IsAny<IReplyMarkup>(), It.IsAny<CancellationToken>()));
+            return bot.Setup(b => b.SendTextMessageAsync(It.Is<Telegram.Bot.Types.ChatId>(c => c.Identifier == chatid), It.Is(msgMatch), Telegram.Bot.Types.Enums.ParseMode.MarkdownV2, It.IsAny<IEnumerable<Telegram.Bot.Types.MessageEntity>>(), It.IsAny<bool>(), It.IsAny<bool>(), It.IsAny<int>(), It.IsAny<bool>(), It.IsAny<IReplyMarkup>(), It.IsAny<CancellationToken>()));
         }
     }
 }
