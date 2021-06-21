@@ -28,7 +28,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="SonarAnalyzer.CSharp" Version="8.24.0.32949" />
+		<PackageReference Include="SonarAnalyzer.CSharp" Version="8.25.0.33663" />
 		<TrimmerRootAssembly Include="System.ComponentModel.TypeConverter" />
 	</ItemGroup>
 
