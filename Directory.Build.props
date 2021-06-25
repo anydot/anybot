@@ -2,13 +2,14 @@
 	<PropertyGroup>
 		<LangVersion>9.0</LangVersion>
 		<Nullable>enable</Nullable>
-		<AnalysisLevel>5</AnalysisLevel>
+		<AnalysisLevel>6</AnalysisLevel>
 		<PublishReadyToRun>false</PublishReadyToRun>
 		<PublishTrimmed>true</PublishTrimmed>
 		<PublishReadyToRunShowWarnings>true</PublishReadyToRunShowWarnings>
 		<SuppressTrimAnalysisWarning>false</SuppressTrimAnalysisWarning>
 		<TrimMode>copyused</TrimMode>
 		<DebugType>none</DebugType>
+		<TrimmerDefaultAction>link</TrimmerDefaultAction>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="$(MSBuildProjectName.EndsWith('Tests'))">
