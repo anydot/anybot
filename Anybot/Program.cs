@@ -1,5 +1,4 @@
-﻿using ActivePass;
-using Anybot.Common;
+﻿using Anybot.Common;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Options;
@@ -24,7 +23,6 @@ namespace Anybot
         {
             services.AddSingleton<IDelayer>(services => new Delayer(services.GetRequiredService<IOptions<AnybotOptions>>().Value.PostDelay));
             services.WithRoumen(context);
-            services.WithActivePass(context);
             services.WithAnybot(context);
         }
     }
