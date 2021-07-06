@@ -1,0 +1,24 @@
+name: Bump version
+
+on:
+  workflow_dispatch:
+    inputs:
+      bump:
+        description: 'Bump style (major/minor/patch)'
+        required: true
+        default: 'minor'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: '0'
+    - name: Bump version and push tag
+      uses: anothrNick/github-tag-action@1.35.0
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        DEFAULT_BUMP: ${{ github.event.inputs.bump }}
+        WITH_V: true
+        INITIAL_VERSION: v1.0.0
