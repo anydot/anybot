@@ -2,7 +2,7 @@
 
 namespace Anybot.Common
 {
-    public interface IRocksWrapper<T>
+    public interface IStorage<T>
     {
         void Delete(string key);
         IEnumerable<KeyValuePair<string, T>> Iterate();

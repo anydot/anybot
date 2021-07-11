@@ -8,7 +8,7 @@ using System.Linq;
 namespace Anybot.Common.Tests
 {
     [TestFixture]
-    public class RocksWrapperTests
+    public class RocksStorageTests
     {
         public class TestModel
         {
@@ -29,7 +29,7 @@ namespace Anybot.Common.Tests
         }
 
         private RocksDb rocksDb;
-        private RocksWrapper<TestModel> db;
+        private RocksStorage<TestModel> db;
 
         [SetUp]
         public void Setup()
@@ -40,7 +40,7 @@ namespace Anybot.Common.Tests
             }
 
             rocksDb = RocksDb.Open(new DbOptions().SetCreateIfMissing(true), "testdb");
-            db = new RocksWrapper<TestModel>(rocksDb, "prefix");
+            db = new RocksStorage<TestModel>(rocksDb, "prefix");
         }
 
         [TearDown]
@@ -118,7 +118,7 @@ namespace Anybot.Common.Tests
             var data = Enumerable.Range(0, 10).Select(_ => new TestModel { Id1 = Guid.NewGuid().ToString(), Id2 = Guid.NewGuid().ToString() }).ToList();
             var result = new List<TestModel>();
             var result2 = new List<TestModel>();
-            var db2 = new RocksWrapper<TestModel>(rocksDb, "prefixM");
+            var db2 = new RocksStorage<TestModel>(rocksDb, "prefixM");
 
             foreach (var d in data)
             {

@@ -4,12 +4,12 @@ using System.Collections.Generic;
 
 namespace Anybot.Common
 {
-    public class RocksWrapper<T> : IRocksWrapper<T>
+    public class RocksStorage<T> : IStorage<T>
     {
         private readonly RocksDb db;
         private readonly string prefix;
 
-        public RocksWrapper(RocksDb db, string prefix)
+        public RocksStorage(RocksDb db, string prefix)
         {
             this.db = db;
             this.prefix = prefix;
