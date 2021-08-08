@@ -34,7 +34,7 @@ COPY alpine-repo.anydot.in.pub /etc/apk/keys/
 RUN \
     mkdir /data && \
     echo "$REPOURL" >> /etc/apk/repositories && \
-    apk add --no-cache krb5-libs=1.18.3-r1 rocksdb=$ROCKSVER && \
+    apk add --no-cache krb5-libs=1.18.4-r0 rocksdb=$ROCKSVER && \
     ln -s /usr/lib/librocksdb.so.6 /usr/lib/librocksdb.so
 
 VOLUME /data
