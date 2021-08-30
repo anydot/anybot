@@ -4,7 +4,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Polly;
 using Polly.Extensions.Http;
-using RocksDbSharp;
 using System;
 
 namespace RoumenBot
@@ -26,8 +25,8 @@ namespace RoumenBot
 
             services.AddHostedService<RoumenService<Tag.Main>>();
             services.AddHostedService<RoumenService<Tag.Maso>>();
-            services.AddSingleton<IStorage<RoumenImage<Tag.Main>>>(s => new RocksStorage<RoumenImage<Tag.Main>>(s.GetRequiredService<RocksDb>(), DbPrefix));
-            services.AddSingleton<IStorage<RoumenImage<Tag.Maso>>>(s => new RocksStorage<RoumenImage<Tag.Maso>>(s.GetRequiredService<RocksDb>(), DbPrefixMaso));
+            services.AddSingleton(s => s.GetRequiredService<FsdbProvider>().Create<RoumenImage<Tag.Main>>(DbPrefix));
+            services.AddSingleton(s => s.GetRequiredService<FsdbProvider>().Create<RoumenImage<Tag.Maso>>(DbPrefixMaso));
 
             return services;
         }

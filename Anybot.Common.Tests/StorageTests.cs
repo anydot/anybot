@@ -1,5 +1,4 @@
 ﻿using NUnit.Framework;
-using RocksDbSharp;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -7,14 +6,12 @@ using System.Linq;
 
 namespace Anybot.Common.Tests
 {
-    [TestFixture(StorageType.RocksDb)]
     [TestFixture(StorageType.FsDb)]
     public class StorageTests
     {
         public enum StorageType
         {
             FsDb,
-            RocksDb
         }
 
         private readonly StorageTestHelper storage;
@@ -46,31 +43,6 @@ namespace Anybot.Common.Tests
         {
             private const string TestPath = "testdb";
 
-            private class RocksTestHelper : StorageTestHelper
-            {
-                private RocksDb rocksDb;
-
-                public override void Open()
-                {
-                    base.Open();
-
-                    rocksDb = RocksDb.Open(new DbOptions().SetCreateIfMissing(true), TestPath);
-                }
-
-                public override void Close()
-                {
-                    rocksDb.Dispose();
-                    rocksDb = null;
-
-                    base.Close();
-                }
-
-                public override IStorage<T> GetCollection<T>(string prefix)
-                {
-                    return new RocksStorage<T>(rocksDb, prefix);
-                }
-            }
-
             private class FsdbTestHelper : StorageTestHelper
             {
                 public override IStorage<T> GetCollection<T>(string prefix)
@@ -83,7 +55,6 @@ namespace Anybot.Common.Tests
             {
                 return type switch
                 {
-                    StorageType.RocksDb => new RocksTestHelper(),
                     StorageType.FsDb => new FsdbTestHelper(),
                     _ => throw new ArgumentOutOfRangeException(nameof(type), "Invalid storage type"),
                 };
