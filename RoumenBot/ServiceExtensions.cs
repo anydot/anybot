@@ -26,8 +26,8 @@ namespace RoumenBot
 
             services.AddHostedService<RoumenService<Tag.Main>>();
             services.AddHostedService<RoumenService<Tag.Maso>>();
-            services.AddSingleton<IStorage<RoumenImage<Tag.Main>>>(s => new RocksWrapper<RoumenImage<Tag.Main>>(s.GetRequiredService<RocksDb>(), DbPrefix));
-            services.AddSingleton<IStorage<RoumenImage<Tag.Maso>>>(s => new RocksWrapper<RoumenImage<Tag.Maso>>(s.GetRequiredService<RocksDb>(), DbPrefixMaso));
+            services.AddSingleton<IStorage<RoumenImage<Tag.Main>>>(s => new RocksStorage<RoumenImage<Tag.Main>>(s.GetRequiredService<RocksDb>(), DbPrefix));
+            services.AddSingleton<IStorage<RoumenImage<Tag.Maso>>>(s => new RocksStorage<RoumenImage<Tag.Maso>>(s.GetRequiredService<RocksDb>(), DbPrefixMaso));
 
             return services;
         }
