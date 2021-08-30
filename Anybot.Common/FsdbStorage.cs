@@ -1,6 +1,7 @@
 ﻿using System.Text.Json;
 using System.Collections.Generic;
 using System.IO;
+using System.Web;
 
 namespace Anybot.Common
 {
@@ -32,16 +33,18 @@ namespace Anybot.Common
 
             foreach (var fi in di.GetFiles())
             {
-                if (TryRead(fi.Name, out var val))
+                var key = HttpUtility.UrlDecode(fi.Name);
+                if (TryRead(key, out var val))
                 {
-                    yield return KeyValuePair.Create(fi.Name, val!);
+                    yield return KeyValuePair.Create(key, val!);
                 }
             }
         }
 
         public bool TryRead(string key, out T? value)
         {
-            var dataName = Path.Combine(dataRoot, key);
+            var sanitizedKey = HttpUtility.UrlEncodeUnicode(key);
+            var dataName = Path.Combine(dataRoot, sanitizedKey);
 
             try
             {
@@ -65,8 +68,9 @@ namespace Anybot.Common
 
         public void Write(string key, T value)
         {
-            var tmpName = Path.Combine(tmpRoot, key);
-            var dataName = Path.Combine(dataRoot, key);
+            var sanitizedKey = HttpUtility.UrlEncodeUnicode(key);
+            var tmpName = Path.Combine(tmpRoot, sanitizedKey);
+            var dataName = Path.Combine(dataRoot, sanitizedKey);
 
             using (var stream = File.Create(tmpName))
             {

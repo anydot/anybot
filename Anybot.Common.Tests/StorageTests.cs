@@ -105,6 +105,17 @@ namespace Anybot.Common.Tests
         }
 
         [Test]
+        public void CanStoreKeysWithWeirdChars()
+        {
+            const string key = "-smth://neco_jej.JPG";
+            var data = new TestModel { Id1 = "id1", Id2 = "id2" };
+            db.Write(key, data);
+
+            Assert.IsTrue(db.TryRead(key, out var result));
+            Assert.AreEqual(data, result);
+        }
+
+        [Test]
         public void CanStoreAndOverwrite()
         {
             var data = new TestModel { Id1 = "id1", Id2 = "id2" };
