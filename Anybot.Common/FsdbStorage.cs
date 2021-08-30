@@ -24,7 +24,8 @@ namespace Anybot.Common
 
         public void Delete(string key)
         {
-            File.Delete(Path.Combine(dataRoot, key));
+            var sanitizedKey = HttpUtility.UrlEncodeUnicode(key);
+            File.Delete(Path.Combine(dataRoot, sanitizedKey));
         }
 
         public IEnumerable<KeyValuePair<string, T>> Iterate()

@@ -145,6 +145,21 @@ namespace Anybot.Common.Tests
         }
 
         [Test]
+        public void StoreDeleteWeirdKeyAndCheck()
+        {
+            const string key = "https://somekey";
+
+            var data = new TestModel { Id1 = "id1", Id2 = "id2" };
+            db.Write(key, data);
+
+            Assert.IsTrue(db.TryRead(key, out _));
+
+            db.Delete(key);
+
+            Assert.IsFalse(db.TryRead(key, out _));
+        }
+
+        [Test]
         public void CanIterate()
         {
             var data = Enumerable.Range(0, 10).Select(_ => new TestModel { Id1 = Guid.NewGuid().ToString(), Id2 = Guid.NewGuid().ToString() }).ToList();
