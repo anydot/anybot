@@ -13,7 +13,7 @@ namespace RoumenBot
     public class RoumenService<T> : BackgroundService
         where T : Tag, new()
     {
-        private readonly IRocksWrapper<RoumenImage<T>> db;
+        private readonly IStorage<RoumenImage<T>> db;
         private readonly ITelegramBotClient bot;
         private readonly ILogger<RoumenService<T>> logger;
         private readonly IRoumenRestService<T> roumenRestService;
@@ -21,7 +21,7 @@ namespace RoumenBot
         private readonly IDelayer delayer;
         private readonly IOptions<RoumenOptions<T>> options;
 
-        public RoumenService(IOptions<RoumenOptions<T>> options, ILogger<RoumenService<T>> logger, IRocksWrapper<RoumenImage<T>> db, ITelegramBotClient bot, IRoumenRestService<T> roumenRestService, IDelayer delayer)
+        public RoumenService(IOptions<RoumenOptions<T>> options, ILogger<RoumenService<T>> logger, IStorage<RoumenImage<T>> db, ITelegramBotClient bot, IRoumenRestService<T> roumenRestService, IDelayer delayer)
         {
             _ = options.Value.ChatId ?? throw new ArgumentOutOfRangeException(nameof(options), "options don't contain the chatID");
             refreshDelay = options.Value.RefreshDelay;
