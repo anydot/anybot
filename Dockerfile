@@ -16,12 +16,11 @@ RUN \
 
 # final stage/image
 FROM alpine:3.14.2
-ARG ROCKSVER
-ARG REPOURL
 
 WORKDIR /app
 COPY --from=build /app .
 RUN \
+    apk add --no-cache libstdc++ && \
     mkdir /data 
 
 VOLUME /data
