@@ -34,18 +34,26 @@ namespace Anybot.Common
             {
                 if (TryRead(fi.Name, out var val))
                 {
-                    yield return KeyValuePair.Create(fi.Name, val);
+                    yield return KeyValuePair.Create(fi.Name, val!);
                 }
             }
         }
 
-        public bool TryRead(string key, out T value)
+        public bool TryRead(string key, out T? value)
         {
             var dataName = Path.Combine(dataRoot, key);
 
             try
             {
-                value = JsonSerializer.Deserialize<T>(File.ReadAllText(dataName, System.Text.Encoding.UTF8));
+                T? retval = JsonSerializer.Deserialize<T>(File.ReadAllText(dataName, System.Text.Encoding.UTF8));
+
+                if (retval == null)
+                {
+                    value = default;
+                    return false;
+                }
+
+                value = retval;
                 return true;
             }
             catch (FileNotFoundException)
