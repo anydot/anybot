@@ -1,5 +1,4 @@
 ﻿using NUnit.Framework;
-using RocksDbSharp;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -7,9 +6,21 @@ using System.Linq;
 
 namespace Anybot.Common.Tests
 {
-    [TestFixture]
-    public class RocksWrapperTests
+    [TestFixture(StorageType.FsDb)]
+    public class StorageTests
     {
+        public enum StorageType
+        {
+            FsDb,
+        }
+
+        private readonly StorageTestHelper storage;
+
+        public StorageTests(StorageType type)
+        {
+            storage = StorageTestHelper.Create(type);
+        }
+
         public class TestModel
         {
             public string Id1 { get; set; }
@@ -28,29 +39,59 @@ namespace Anybot.Common.Tests
             }
         }
 
-        private RocksDb rocksDb;
-        private RocksWrapper<TestModel> db;
+        private abstract class StorageTestHelper
+        {
+            private const string TestPath = "testdb";
+
+            private class FsdbTestHelper : StorageTestHelper
+            {
+                public override IStorage<T> GetCollection<T>(string prefix)
+                {
+                    return new FsdbStorage<T>(TestPath, prefix);
+                }
+            }
+
+            public static StorageTestHelper Create(StorageType type)
+            {
+                return type switch
+                {
+                    StorageType.FsDb => new FsdbTestHelper(),
+                    _ => throw new ArgumentOutOfRangeException(nameof(type), "Invalid storage type"),
+                };
+            }
+
+            public virtual void Close()
+            {
+                if (Directory.Exists(TestPath))
+                {
+                    Directory.Delete(TestPath, true);
+                }
+            }
+
+            public virtual void Open()
+            {
+                if (Directory.Exists(TestPath))
+                {
+                    Directory.Delete(TestPath, true);
+                }
+            }
+
+            public abstract IStorage<T> GetCollection<T>(string prefix);
+        }
+
+        private IStorage<TestModel> db;
 
         [SetUp]
         public void Setup()
         {
-            if (Directory.Exists("testdb"))
-            {
-                Directory.Delete("testdb", true);
-            }
-
-            rocksDb = RocksDb.Open(new DbOptions().SetCreateIfMissing(true), "testdb");
-            db = new RocksWrapper<TestModel>(rocksDb, "prefix");
+            storage.Open();
+            db = storage.GetCollection<TestModel>("prefix");
         }
 
         [TearDown]
         public void Teardown()
         {
-            rocksDb.Dispose();
-            rocksDb = null;
-            db = null;
-
-            Directory.Delete("testdb", true);
+            storage.Close();
         }
 
         [Test]
@@ -60,6 +101,17 @@ namespace Anybot.Common.Tests
             db.Write("key1", data);
 
             Assert.IsTrue(db.TryRead("key1", out var result));
+            Assert.AreEqual(data, result);
+        }
+
+        [Test]
+        public void CanStoreKeysWithWeirdChars()
+        {
+            const string key = "-smth://neco_jej.JPG";
+            var data = new TestModel { Id1 = "id1", Id2 = "id2" };
+            db.Write(key, data);
+
+            Assert.IsTrue(db.TryRead(key, out var result));
             Assert.AreEqual(data, result);
         }
 
@@ -93,6 +145,21 @@ namespace Anybot.Common.Tests
         }
 
         [Test]
+        public void StoreDeleteWeirdKeyAndCheck()
+        {
+            const string key = "https://somekey";
+
+            var data = new TestModel { Id1 = "id1", Id2 = "id2" };
+            db.Write(key, data);
+
+            Assert.IsTrue(db.TryRead(key, out _));
+
+            db.Delete(key);
+
+            Assert.IsFalse(db.TryRead(key, out _));
+        }
+
+        [Test]
         public void CanIterate()
         {
             var data = Enumerable.Range(0, 10).Select(_ => new TestModel { Id1 = Guid.NewGuid().ToString(), Id2 = Guid.NewGuid().ToString() }).ToList();
@@ -118,7 +185,7 @@ namespace Anybot.Common.Tests
             var data = Enumerable.Range(0, 10).Select(_ => new TestModel { Id1 = Guid.NewGuid().ToString(), Id2 = Guid.NewGuid().ToString() }).ToList();
             var result = new List<TestModel>();
             var result2 = new List<TestModel>();
-            var db2 = new RocksWrapper<TestModel>(rocksDb, "prefixM");
+            var db2 = storage.GetCollection<TestModel>("prefixM");
 
             foreach (var d in data)
             {

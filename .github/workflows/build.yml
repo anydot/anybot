@@ -16,10 +16,10 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v2.4.0
 
       - name: hadolint
-        uses: reviewdog/action-hadolint@v1.23
+        uses: reviewdog/action-hadolint@v1.25
         with:
           fail_on_error: ${{ ! startsWith(github.ref, 'refs/pull/') }}
           filter_mode: file
@@ -40,7 +40,7 @@ jobs:
           echo ::set-output name=tags::${DOCKER_IMAGE}:${VERSION},${DOCKER_IMAGE}:latest
 
       - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v1.5.1
+        uses: docker/setup-buildx-action@v1.6.0
 
       - name: Login to Docker
         uses: docker/login-action@v1.10.0
@@ -49,7 +49,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build and push Docker images
-        uses: docker/build-push-action@v2.6.1
+        uses: docker/build-push-action@v2.7.0
         with:
           tags: ${{ steps.prep.outputs.tags }}
           push: ${{ startsWith(github.ref, 'refs/tags/') }}
