@@ -19,6 +19,8 @@ FROM alpine:3.14.3
 
 WORKDIR /app
 COPY --from=build /app .
+
+# hadolint ignore=DL3018
 RUN \
     apk add --no-cache libstdc++ && \
     mkdir /data 
