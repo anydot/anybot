@@ -20,7 +20,7 @@ namespace Anybot
 
             services.AddHttpClient<ITelegramBotClient>()
                 .AddPolicyHandler(HttpPolicyExtensions.HandleTransientHttpError().WaitAndRetryAsync(4, retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt))));
-            services.AddSingleton<ITelegramBotClient>(services => new TelegramBotClient(services.GetRequiredService<IOptions<AnybotOptions>>().Value.Token, services.GetService<HttpClient>()));
+            services.AddSingleton<ITelegramBotClient>(services => new TelegramBotClient(services.GetRequiredService<IOptions<AnybotOptions>>().Value.Token!, services.GetService<HttpClient>()));
             services.AddSingleton<ICommand, ChatIdCommand>();
             services.AddSingleton(s => s.GetServices<ICommand>().ToArray());
             services.AddSingleton(s => new FsdbProvider(s.GetRequiredService<IOptions<AnybotOptions>>().Value.Database));

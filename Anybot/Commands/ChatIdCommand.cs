@@ -19,7 +19,7 @@ namespace Anybot.Commands
 
         public async Task HandleUpdate(ITelegramBotClient bot, Update update)
         {
-            Message message = update.Message ?? update.ChannelPost;
+            Message? message = update.Message ?? update.ChannelPost;
 
             if (message == null)
             {
