@@ -41,9 +41,9 @@ namespace Anybot
             logger.LogInformation($"Starting bot: {botDetails.Username}");
             logger.LogInformation("Starting receiving commands: {0}", string.Join(',', commands.Select(c => c.CommandName)));
 
-            await bot.SetMyCommandsAsync(commands.Select(c => new BotCommand { Command = c.CommandName, Description = c.CommandDescription }), cts.Token).ConfigureAwait(false);
+            await bot.SetMyCommandsAsync(commands.Select(c => new BotCommand { Command = c.CommandName, Description = c.CommandDescription }), cancellationToken: cts.Token).ConfigureAwait(false);
 
-            bot.StartReceiving(this, cts.Token);
+            bot.StartReceiving(this, cancellationToken: cts.Token);
         }
 
         public Task StopAsync(CancellationToken cancellationToken)
@@ -52,13 +52,13 @@ namespace Anybot
             return Task.CompletedTask;
         }
 
-        public async Task HandleUpdate(ITelegramBotClient botClient, Update update, CancellationToken cancellationToken)
+        public async Task HandleUpdateAsync(ITelegramBotClient botClient, Update update, CancellationToken cancellationToken)
         {
             if (update.Type == UpdateType.ChannelPost || update.Type == UpdateType.Message)
             {
                 var message = update.Message ?? update.ChannelPost;
 
-                if (message.Entities != null)
+                if (message?.Entities != null && message?.Text != null)
                 {
                     var botcommandEntity = Array.Find(message.Entities, e => e.Type == MessageEntityType.BotCommand);
 
@@ -68,7 +68,7 @@ namespace Anybot
 
                         if (command.EndsWith(botPostfix))
                         {
-                            command = command.Substring(0, command.Length - botPostfix.Length);
+                            command = command[..^botPostfix.Length];
                         }
 
                         var commandMatch = Array.Find(commands, c => c.CommandName == command);
@@ -82,7 +82,7 @@ namespace Anybot
             }
         }
 
-        public Task HandleError(ITelegramBotClient botClient, Exception exception, CancellationToken cancellationToken)
+        public Task HandleErrorAsync(ITelegramBotClient botClient, Exception exception, CancellationToken cancellationToken)
         {
             logger.LogError(exception, "Got exception");
             return Task.CompletedTask;
