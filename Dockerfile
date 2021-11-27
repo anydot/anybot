@@ -15,7 +15,7 @@ RUN \
     du -h /app
 
 # final stage/image
-FROM alpine:3.14.3
+FROM alpine:3.15.0
 
 WORKDIR /app
 COPY --from=build /app .
