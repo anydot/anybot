@@ -4,6 +4,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Options;
 using RoumenBot;
 using System.Threading.Tasks;
+using System.Diagnostics;
+using System;
 
 namespace Anybot
 {
@@ -11,6 +13,9 @@ namespace Anybot
     {
         public static async Task Main(string[] args)
         {
+            Debug.Assert(!OperatingSystem.IsAndroid());
+            Debug.Assert(!OperatingSystem.IsIOS());
+
             await Host
                 .CreateDefaultBuilder(args)
                 .UseConsoleLifetime()
