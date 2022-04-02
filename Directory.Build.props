@@ -4,10 +4,10 @@
 		<Nullable>enable</Nullable>
 		<AnalysisLevel>5</AnalysisLevel>
 		<PublishReadyToRun>false</PublishReadyToRun>
-		<PublishTrimmed>true</PublishTrimmed>
+		<!-- disabled for net7 <PublishTrimmed>true</PublishTrimmed> -->
 		<PublishReadyToRunShowWarnings>true</PublishReadyToRunShowWarnings>
 		<SuppressTrimAnalysisWarning>false</SuppressTrimAnalysisWarning>
-		<TrimMode>link</TrimMode>
+		<!-- disabled for net7 <TrimMode>copyused</TrimMode> -->
 		<DebugType>none</DebugType>
 	</PropertyGroup>
 
