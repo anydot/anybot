@@ -24,7 +24,7 @@ namespace Anybot.Common
 
         public void Delete(string key)
         {
-            var sanitizedKey = HttpUtility.UrlEncodeUnicode(key);
+            var sanitizedKey = HttpUtility.UrlEncode(key);
             File.Delete(Path.Combine(dataRoot, sanitizedKey));
         }
 
@@ -44,7 +44,7 @@ namespace Anybot.Common
 
         public bool TryRead(string key, out T? value)
         {
-            var sanitizedKey = HttpUtility.UrlEncodeUnicode(key);
+            var sanitizedKey = HttpUtility.UrlEncode(key);
             var dataName = Path.Combine(dataRoot, sanitizedKey);
 
             try
@@ -69,7 +69,7 @@ namespace Anybot.Common
 
         public void Write(string key, T value)
         {
-            var sanitizedKey = HttpUtility.UrlEncodeUnicode(key);
+            var sanitizedKey = HttpUtility.UrlEncode(key);
             var tmpName = Path.Combine(tmpRoot, sanitizedKey);
             var dataName = Path.Combine(dataRoot, sanitizedKey);
 
