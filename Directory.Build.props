@@ -11,6 +11,11 @@
 		<DebugType>none</DebugType>
 	</PropertyGroup>
 
+  <PropertyGroup>
+    <AnalysisMode>Recommended</AnalysisMode>
+    <AnalysisModeGlobalization>None</AnalysisModeGlobalization>
+  </PropertyGroup>
+
 	<PropertyGroup Condition="$(MSBuildProjectName.EndsWith('Tests'))">
 		<Nullable>disable</Nullable>
 	</PropertyGroup>

@@ -21,7 +21,7 @@ namespace Anybot.Common.Tests
             storage = StorageTestHelper.Create(type);
         }
 
-        public class TestModel
+        private class TestModel
         {
             public string Id1 { get; set; }
             public string Id2 { get; set; }
@@ -180,7 +180,7 @@ namespace Anybot.Common.Tests
         }
 
         [Test]
-        public void IterateReturnsRightKey_IfThereAreKeyWithSimilarName()
+        public void IterateReturnsRightKeyIfThereAreKeyWithSimilarName()
         {
             var data = Enumerable.Range(0, 10).Select(_ => new TestModel { Id1 = Guid.NewGuid().ToString(), Id2 = Guid.NewGuid().ToString() }).ToList();
             var result = new List<TestModel>();

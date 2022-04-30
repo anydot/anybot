@@ -2,9 +2,9 @@
 {
     public abstract class Tag
     {
-        public static class TImpl<T> where T : Tag, new()
+        private static class TImpl<T> where T : Tag, new()
         {
-            public static readonly T Instance = new T();
+            public static readonly T Instance = new();
         }
 
         public static string DivName<T>() where T : Tag, new()

@@ -8,7 +8,7 @@ namespace Anybot.Common.Tests
     public class DelayerTests
     {
         [Test]
-        public async Task Delay_WaitsForTheSecondTaskToFinishBeforeContinueWithTheSecondOne()
+        public async Task DelayWaitsForTheSecondTaskToFinishBeforeContinueWithTheSecondOne()
         {
             var tcs1 = new TaskCompletionSource<bool>();
             var tcs2 = new TaskCompletionSource<bool>();
