@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RoumenBot
 {
-    public class RoumenRestService<T> : IRoumenRestService<T> where T : Tag, new()
+    public class RoumenRestService<T> : IRoumenRestService<T> where T : Tag.TagBase, new()
     {
         private readonly IOptions<RoumenOptions<T>> options;
         private readonly HttpClient httpClient;
@@ -22,7 +22,7 @@ namespace RoumenBot
         public async Task<IEnumerable<RoumenImage<T>>> FetchImagesFromWeb()
         {
             using var request = new HttpRequestMessage(HttpMethod.Get, options.Value.DataUrl);
-            var baseUrl = new Uri(options.Value.DataUrl!).GetLeftPart(UriPartial.Authority);
+            var baseUrl = new Uri(new Uri(options.Value.DataUrl!).GetLeftPart(UriPartial.Authority));
 
             request.Headers.Add("Accept", "application/json, text/plain, */*");
             request.Headers.Add("x-requested-with", "xhr");

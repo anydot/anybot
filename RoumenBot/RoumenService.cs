@@ -11,7 +11,7 @@ using Telegram.Bot;
 namespace RoumenBot
 {
     public class RoumenService<T> : BackgroundService
-        where T : Tag, new()
+        where T : Tag.TagBase, new()
     {
         private readonly IStorage<RoumenImage<T>> db;
         private readonly ITelegramBotClient bot;
@@ -56,13 +56,13 @@ namespace RoumenBot
                     {
                         try
                         {
-                            await delayer.Delay(async () => await bot.MessageWithOptionalImage((long)options.Value.ChatId!, FormatImage(image), image.ImageUrl).ConfigureAwait(false)).ConfigureAwait(false);
+                            await delayer.Delay(async () => await bot.MessageWithOptionalImage((long)options.Value.ChatId!, FormatImage(image), new Uri(image.ImageUrl)).ConfigureAwait(false)).ConfigureAwait(false);
                         }
-                        catch (Telegram.Bot.Exceptions.ApiRequestException e) when (e.Message.Contains("wrong file identifier/HTTP URL specified"))
+                        catch (Telegram.Bot.Exceptions.ApiRequestException e) when (e.Message.Contains("wrong file identifier/HTTP URL specified", StringComparison.InvariantCultureIgnoreCase))
                         {
                             logger.LogInformation(e, $"Ignoring image publish {image.ImageUrl}");
                         }
-                        catch (Exception e)
+                        catch (Telegram.Bot.Exceptions.RequestException e)
                         {
                             logger.LogError(e, $"Can't process image {image}");
                             writeToDb = false;
@@ -94,6 +94,7 @@ namespace RoumenBot
         {
             while (!stoppingToken.IsCancellationRequested)
             {
+#pragma warning disable CA1031 // Do not catch general exception types
                 try
                 {
                     await RunOnce(stoppingToken).ConfigureAwait(false);
@@ -102,6 +103,7 @@ namespace RoumenBot
                 {
                     logger.LogError(e, "Run resulted in exception");
                 }
+#pragma warning restore CA1031 // Do not catch general exception types
 
                 await Task.Delay(refreshDelay, stoppingToken).ConfigureAwait(false);
             }

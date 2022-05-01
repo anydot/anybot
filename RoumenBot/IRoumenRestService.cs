@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace RoumenBot
 {
-    public interface IRoumenRestService<T> where T : Tag, new()
+    public interface IRoumenRestService<T> where T : Tag.TagBase, new()
     {
         Task<IEnumerable<RoumenImage<T>>> FetchImagesFromWeb();
     }

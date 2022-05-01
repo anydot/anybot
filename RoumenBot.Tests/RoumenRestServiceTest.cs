@@ -1,7 +1,9 @@
 ﻿using Microsoft.Extensions.Options;
 using Moq;
 using NUnit.Framework;
+using RoumenBot.Tag;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace RoumenBot.Tests
@@ -12,10 +14,12 @@ namespace RoumenBot.Tests
         [Test]
         public async Task SanityCheckParser()
         {
-            var optionsMock = new Mock<IOptions<RoumenOptions<Tag.Main>>>();
-            optionsMock.SetupGet(o => o.Value).Returns(new RoumenOptions<Tag.Main>() { DataUrl = "https://www.rouming.cz/" });
+            var optionsMock = new Mock<IOptions<RoumenOptions<Main>>>();
+            optionsMock.SetupGet(o => o.Value).Returns(new RoumenOptions<Main>() { DataUrl = "https://www.rouming.cz/" });
 
-            var sut = new RoumenRestService<Tag.Main>(new System.Net.Http.HttpClient(), optionsMock.Object, new RoumenParser());
+            using var httpClient = new HttpClient();
+
+            var sut = new RoumenRestService<Main>(httpClient, optionsMock.Object, new RoumenParser());
 
             var testImages = (await sut.FetchImagesFromWeb().ConfigureAwait(false)).ToList();
 

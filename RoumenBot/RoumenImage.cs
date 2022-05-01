@@ -1,8 +1,11 @@
 ﻿using System;
 
+#pragma warning disable CA1056 // URI-like properties should not be strings
+#pragma warning disable CA1054 // URI-like parameters should not be strings
+
 namespace RoumenBot
 {
-    public sealed class RoumenImage<T> : IEquatable<RoumenImage<T>> where T : Tag
+    public sealed class RoumenImage<T> : IEquatable<RoumenImage<T>> where T : Tag.TagBase
     {
         public RoumenImage(string imageUrl, string description, string commentLink)
         {

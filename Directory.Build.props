@@ -12,7 +12,7 @@
 	</PropertyGroup>
 
   <PropertyGroup>
-    <AnalysisMode>Recommended</AnalysisMode>
+    <AnalysisMode>All</AnalysisMode>
     <AnalysisModeGlobalization>None</AnalysisModeGlobalization>
   </PropertyGroup>
 

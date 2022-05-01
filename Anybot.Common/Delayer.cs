@@ -34,6 +34,7 @@ namespace Anybot.Common
                 var task = delayedFunc();
                 var stopwatch = Stopwatch.StartNew();
 
+#pragma warning disable CA1031 // Do not catch general exception types
                 try
                 {
                     tcsReturn.SetResult(await task.ConfigureAwait(false));
@@ -42,6 +43,7 @@ namespace Anybot.Common
                 {
                     tcsReturn.SetException(e);
                 }
+#pragma warning restore CA1031 // Do not catch general exception types
 
                 var sleepTime = delay - stopwatch.Elapsed;
 
@@ -51,7 +53,7 @@ namespace Anybot.Common
                 }
 
                 tcsDelayed.SetResult(true);
-            });
+            }, TaskScheduler.Default);
 
             return tcsReturn.Task;
         }

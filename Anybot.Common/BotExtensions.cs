@@ -1,12 +1,14 @@
-﻿using System.Text.RegularExpressions;
+﻿using System;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Telegram.Bot;
+using Telegram.Bot.Types.InputFiles;
 
 namespace Anybot.Common
 {
     public static class BotExtensions
     {
-        public static async Task MessageWithOptionalImage(this ITelegramBotClient bot, long chatid, string message, string? imageUrl)
+        public static async Task MessageWithOptionalImage(this ITelegramBotClient bot, long chatid, string message, Uri? imageUrl)
         {
             if (imageUrl == null)
             {
@@ -14,7 +16,7 @@ namespace Anybot.Common
             }
             else
             {
-                await bot.SendPhotoAsync(chatid, imageUrl, message, Telegram.Bot.Types.Enums.ParseMode.MarkdownV2).ConfigureAwait(false);
+                await bot.SendPhotoAsync(chatid, new InputOnlineFile(imageUrl), message, Telegram.Bot.Types.Enums.ParseMode.MarkdownV2).ConfigureAwait(false);
             }
         }
 

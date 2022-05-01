@@ -2,6 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using NUnit.Framework;
+using RoumenBot.Tag;
 using System;
 using System.IO;
 using System.Text;
@@ -21,9 +22,9 @@ namespace RoumenBot.Tests
                 .Build();
 
             var collection = new ServiceCollection();
-            collection.AddOptions<RoumenOptions<Tag.Main>>().Bind(config.GetSection("Roumen"));
+            collection.AddOptions<RoumenOptions<Main>>().Bind(config.GetSection("Roumen"));
             var provider = collection.BuildServiceProvider();
-            var options = provider.GetService<IOptions<RoumenOptions<Tag.Main>>>();
+            var options = provider.GetService<IOptions<RoumenOptions<Main>>>();
 
             Assert.IsNotNull(options);
             Assert.IsNotNull(options.Value);
