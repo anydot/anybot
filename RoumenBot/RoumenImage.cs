@@ -2,7 +2,7 @@
 
 namespace RoumenBot
 {
-    public sealed class RoumenImage<T> : IEquatable<RoumenImage<T>> where T : Tag
+    public sealed class RoumenImage<T> : IEquatable<RoumenImage<T>> where T : ITag
     {
         public RoumenImage(string imageUrl, string description, string commentLink)
         {

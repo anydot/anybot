@@ -11,7 +11,7 @@ using Telegram.Bot;
 namespace RoumenBot
 {
     public class RoumenService<T> : BackgroundService
-        where T : Tag, new()
+        where T : ITag, new()
     {
         private readonly IStorage<RoumenImage<T>> db;
         private readonly ITelegramBotClient bot;
