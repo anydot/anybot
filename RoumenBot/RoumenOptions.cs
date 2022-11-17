@@ -3,7 +3,7 @@
 namespace RoumenBot
 {
 #pragma warning disable S2326 // Unused type parameters should be removed
-    public class RoumenOptions<T> where T : Tag
+    public class RoumenOptions<T> where T : ITag
 #pragma warning restore S2326 // Unused type parameters should be removed
     {
         public long? ChatId { get; set; }

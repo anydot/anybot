@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RoumenBot
 {
-    public class RoumenRestService<T> : IRoumenRestService<T> where T : Tag, new()
+    public class RoumenRestService<T> : IRoumenRestService<T> where T : ITag, new()
     {
         private readonly IOptions<RoumenOptions<T>> options;
         private readonly HttpClient httpClient;
