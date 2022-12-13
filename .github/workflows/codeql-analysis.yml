@@ -20,7 +20,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v3.2.0
 
     - name: Prepare .NET 7
       uses: actions/setup-dotnet@v3
