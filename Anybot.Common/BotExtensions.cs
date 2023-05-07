@@ -1,6 +1,7 @@
 ﻿using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Telegram.Bot;
+using Telegram.Bot.Types;
 
 namespace Anybot.Common
 {
@@ -10,11 +11,11 @@ namespace Anybot.Common
         {
             if (imageUrl == null)
             {
-                await bot.SendTextMessageAsync(chatid, message, Telegram.Bot.Types.Enums.ParseMode.MarkdownV2, disableWebPagePreview: true).ConfigureAwait(false);
+                await bot.SendTextMessageAsync(chatid, message, parseMode: Telegram.Bot.Types.Enums.ParseMode.MarkdownV2, disableWebPagePreview: true).ConfigureAwait(false);
             }
             else
             {
-                await bot.SendPhotoAsync(chatid, imageUrl, message, Telegram.Bot.Types.Enums.ParseMode.MarkdownV2).ConfigureAwait(false);
+                await bot.SendPhotoAsync(chatid, InputFile.FromUri(imageUrl), caption: message, parseMode: Telegram.Bot.Types.Enums.ParseMode.MarkdownV2).ConfigureAwait(false);
             }
         }
 
