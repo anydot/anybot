@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/sdk:7.0-alpine3.15 AS build
+FROM mcr.microsoft.com/dotnet/sdk:8.0-preview-alpine AS build
 ARG RELEASE=false
 
 WORKDIR /source
