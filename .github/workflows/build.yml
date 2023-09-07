@@ -19,7 +19,7 @@ jobs:
         uses: actions/checkout@v3.6.0
 
       - name: hadolint
-        uses: reviewdog/action-hadolint@v1.35
+        uses: reviewdog/action-hadolint@v1.36
         with:
           fail_on_error: ${{ ! startsWith(github.ref, 'refs/pull/') }}
           filter_mode: file
