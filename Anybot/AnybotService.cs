@@ -54,7 +54,7 @@ namespace Anybot
             {
                 var message = update.Message ?? update.ChannelPost;
 
-                if (message?.Entities != null && message?.Text != null)
+                if (message?.Entities != null && message.Text != null)
                 {
                     var botcommandEntity = Array.Find(message.Entities, e => e.Type == MessageEntityType.BotCommand);
 
