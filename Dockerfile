@@ -11,7 +11,7 @@ RUN \
     echo [*] Running tests && \
     dotnet test -c "$CONFIGURATION" /p:TreatWarningsAsErrors=true && \
     echo [*] Done && \
-    dotnet publish -c "$CONFIGURATION" -o /app -r alpine-x64 --self-contained true /p:TreatWarningsAsErrors=true Anybot && \
+    dotnet publish -c "$CONFIGURATION" -o /app -r linux-musl-x64 --self-contained true /p:TreatWarningsAsErrors=true Anybot && \
     du -h /app
 
 # final stage/image

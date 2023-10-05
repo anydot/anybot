@@ -20,7 +20,7 @@
 	</PropertyGroup>
 
 	<PropertyGroup Condition="$(OS) != 'Windows_NT'">
-		<RuntimeIdentifier>alpine-x64</RuntimeIdentifier>
+		<RuntimeIdentifier>linux-musl-x64</RuntimeIdentifier>
 	</PropertyGroup>
 
 	<ItemGroup>
