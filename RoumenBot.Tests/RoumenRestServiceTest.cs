@@ -19,11 +19,11 @@ namespace RoumenBot.Tests
 
             var testImages = (await sut.FetchImagesFromWeb().ConfigureAwait(false)).ToList();
 
-            Assert.Greater(testImages.Count, 50);
+            Assert.That(testImages, Has.Count.GreaterThan(50));
 
             var image = testImages[0];
-            StringAssert.StartsWith("https://", image.CommentLink);
-            StringAssert.StartsWith("https://", image.ImageUrl);
+            Assert.That(image.CommentLink, Does.StartWith("https://"));
+            Assert.That(image.ImageUrl, Does.StartWith("https://"));
         }
     }
 }

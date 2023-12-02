@@ -41,7 +41,7 @@ namespace Anybot.Common.Tests
 
         private abstract class StorageTestHelper
         {
-            private const string TestPath = "testdb";
+            private const string TestPath = "test_db";
 
             private class FsdbTestHelper : StorageTestHelper
             {
@@ -100,19 +100,19 @@ namespace Anybot.Common.Tests
             var data = new TestModel { Id1 = "id1", Id2 = "id2" };
             db.Write("key1", data);
 
-            Assert.IsTrue(db.TryRead("key1", out var result));
-            Assert.AreEqual(data, result);
+            Assert.That(db.TryRead("key1", out var result), Is.True);
+            Assert.That(result, Is.EqualTo(data));
         }
 
         [Test]
         public void CanStoreKeysWithWeirdChars()
         {
-            const string key = "-smth://neco_jej.JPG";
+            const string key = "-something://else_jej.JPG";
             var data = new TestModel { Id1 = "id1", Id2 = "id2" };
             db.Write(key, data);
 
-            Assert.IsTrue(db.TryRead(key, out var result));
-            Assert.AreEqual(data, result);
+            Assert.That(db.TryRead(key, out var result), Is.True);
+            Assert.That(result, Is.EqualTo(data));
         }
 
         [Test]
@@ -121,14 +121,14 @@ namespace Anybot.Common.Tests
             var data = new TestModel { Id1 = "id1", Id2 = "id2" };
             db.Write("key1", data);
 
-            Assert.IsTrue(db.TryRead("key1", out var result));
-            Assert.AreEqual(data, result);
+            Assert.That(db.TryRead("key1", out var result), Is.True);
+            Assert.That(result, Is.EqualTo(data));
 
-            data.Id1 = "someotherkey";
+            data.Id1 = "some-other-key";
             db.Write("key1", data);
 
-            Assert.IsTrue(db.TryRead("key1", out result));
-            Assert.AreEqual(data, result);
+            Assert.That(db.TryRead("key1", out result), Is.True);
+            Assert.That(result, Is.EqualTo(data));
         }
 
         [Test]
@@ -137,11 +137,11 @@ namespace Anybot.Common.Tests
             var data = new TestModel { Id1 = "id1", Id2 = "id2" };
             db.Write("key1", data);
 
-            Assert.IsTrue(db.TryRead("key1", out _));
+            Assert.That(db.TryRead("key1", out _), Is.True);
 
             db.Delete("key1");
 
-            Assert.IsFalse(db.TryRead("key1", out _));
+            Assert.That(db.TryRead("key1", out _), Is.False);
         }
 
         [Test]
@@ -152,11 +152,11 @@ namespace Anybot.Common.Tests
             var data = new TestModel { Id1 = "id1", Id2 = "id2" };
             db.Write(key, data);
 
-            Assert.IsTrue(db.TryRead(key, out _));
+            Assert.That(db.TryRead(key, out _), Is.True);
 
             db.Delete(key);
 
-            Assert.IsFalse(db.TryRead(key, out _));
+            Assert.That(db.TryRead(key, out _), Is.False);
         }
 
         [Test]
@@ -172,11 +172,11 @@ namespace Anybot.Common.Tests
 
             foreach (var kv in db.Iterate())
             {
-                Assert.AreEqual(kv.Key, kv.Value.Id1);
+                Assert.That(kv.Value.Id1, Is.EqualTo(kv.Key));
                 result.Add(kv.Value);
             }
 
-            CollectionAssert.AreEquivalent(data, result);
+            Assert.That(result, Is.EquivalentTo(data));
         }
 
         [Test]
@@ -195,18 +195,18 @@ namespace Anybot.Common.Tests
 
             foreach (var kv in db.Iterate())
             {
-                Assert.AreEqual(kv.Key, kv.Value.Id1);
+                Assert.That(kv.Value.Id1, Is.EqualTo(kv.Key));
                 result.Add(kv.Value);
             }
 
             foreach (var kv in db2.Iterate())
             {
-                Assert.AreEqual(kv.Key, kv.Value.Id1);
+                Assert.That(kv.Value.Id1, Is.EqualTo(kv.Key));
                 result2.Add(kv.Value);
             }
 
-            CollectionAssert.AreEquivalent(data, result);
-            CollectionAssert.AreEquivalent(data, result2);
+            Assert.That(result, Is.EquivalentTo(data));
+            Assert.That(result2, Is.EquivalentTo(data));
         }
     }
 }
