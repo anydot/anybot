@@ -25,13 +25,13 @@ namespace RoumenBot.Tests
             var provider = collection.BuildServiceProvider();
             var options = provider.GetService<IOptions<RoumenOptions<Tag.Main>>>();
 
-            Assert.IsNotNull(options);
-            Assert.IsNotNull(options.Value);
+            Assert.That(options, Is.Not.Null);
+            Assert.That(options.Value, Is.Not.Null);
 
             var opt = options.Value;
 
-            Assert.AreEqual(-1001346659992L, opt.ChatId);
-            Assert.AreEqual(TimeSpan.FromMinutes(47), opt.RefreshDelay);
+            Assert.That(opt.ChatId, Is.EqualTo(-1001346659992L));
+            Assert.That(opt.RefreshDelay, Is.EqualTo(TimeSpan.FromMinutes(47)));
         }
     }
 }

@@ -20,11 +20,11 @@ namespace Anybot.Common.Tests
             var set = new Task[] { t1, t2 };
             var tasks = Task.WhenAny(set);
 
-            Assert.IsFalse(tasks.IsCompleted);
+            Assert.That(tasks.IsCompleted, Is.False);
 
             tcs1.SetResult(true);
 
-            Assert.AreEqual(t1, await tasks.ConfigureAwait(false));
+            Assert.That(await tasks.ConfigureAwait(false), Is.EqualTo(t1));
 
             tcs2.SetResult(true);
             await t2.ConfigureAwait(false);
