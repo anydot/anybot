@@ -22,9 +22,4 @@
       <LastGenOutput>TestResource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Update="NUnit" Version="4.0.0" />
-  </ItemGroup>
-
 </Project>

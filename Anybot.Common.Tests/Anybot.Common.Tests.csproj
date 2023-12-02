@@ -8,9 +8,4 @@
   <ItemGroup>
     <ProjectReference Include="..\Anybot.Common\Anybot.Common.csproj" />
   </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Update="NUnit" Version="4.0.0" />
-  </ItemGroup>
-
 </Project>
