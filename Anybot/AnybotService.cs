@@ -45,6 +45,13 @@ namespace Anybot
         public Task StopAsync(CancellationToken cancellationToken)
         {
             cts?.Cancel();
+
+            if (cts != null)
+            {
+                cts.Dispose();
+                cts = null;
+            }
+
             return Task.CompletedTask;
         }
 
