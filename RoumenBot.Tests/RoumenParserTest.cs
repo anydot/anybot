@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using System.Diagnostics;
 using System.Linq;
 
 namespace RoumenBot.Tests
@@ -12,7 +13,9 @@ namespace RoumenBot.Tests
             var parser = new RoumenParser();
             var result = parser.Parse<Tag.Main>(TestResource.RoumingPage, "").ToList();
 
-            Assert.That(result, Has.Count.EqualTo(133));
+            Debugger.Break();
+
+            Assert.That(result, Has.Count.EqualTo(134));
             Assert.That(result[0], Is.EqualTo(new RoumenImage<Tag.Main>("https://www.rouming.cz/upload/They-must-turn-into-salts.jpg", "They-must-turn-into-salts", "https://www.rouming.cz/roumingShow.php?file=They-must-turn-into-salts.jpg")));
             Assert.That(result[1], Is.EqualTo(new RoumenImage<Tag.Main>("https://www.rouming.cz/upload/Nobody-expects-it.jpg", "Nobody-expects-it", "https://www.rouming.cz/roumingShow.php?file=Nobody-expects-it.jpg")));
         }
@@ -23,9 +26,9 @@ namespace RoumenBot.Tests
             var parser = new RoumenParser();
             var result = parser.Parse<Tag.Maso>(TestResource.MasoPage, "").ToList();
 
-            Assert.That(result, Has.Count.EqualTo(88));
-            Assert.That(result[0], Is.EqualTo(new RoumenImage<Tag.Maso>("https://www.roumenovomaso.cz/upload/necum2a.jpg", "necum2a", "https://www.roumenovomaso.cz/masoShow.php?file=necum2a.jpg")));
-            Assert.That(result[1], Is.EqualTo(new RoumenImage<Tag.Maso>("https://www.roumenovomaso.cz/upload/fcx3_2N4NM.jpg", "fcx3 2N4NM", "https://www.roumenovomaso.cz/masoShow.php?file=fcx3_2N4NM.jpg")));
+            Assert.That(result, Has.Count.EqualTo(140));
+            Assert.That(result[0], Is.EqualTo(new RoumenImage<Tag.Maso>("https://www.roumenovomaso.cz/upload/Erika_je_mrdadlo_08.jpg", "Erika je mrdadlo 08", "https://www.roumenovomaso.cz/masoShow.php?file=Erika_je_mrdadlo_08.jpg")));
+            Assert.That(result[1], Is.EqualTo(new RoumenImage<Tag.Maso>("https://www.roumenovomaso.cz/upload/Erika_je_mrdadlo_07.jpg", "Erika je mrdadlo 07", "https://www.roumenovomaso.cz/masoShow.php?file=Erika_je_mrdadlo_07.jpg")));
         }
     }
 }

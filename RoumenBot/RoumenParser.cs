@@ -1,5 +1,6 @@
 ﻿using HtmlAgilityPack;
 using System.Collections.Generic;
+using System.Net;
 
 namespace RoumenBot
 {
@@ -10,11 +11,10 @@ namespace RoumenBot
             var doc = new HtmlDocument();
 
             doc.LoadHtml(roumingPage);
-            var nodes = doc.DocumentNode.SelectNodes($"//div[contains(@class, '{T.DivName}')]/table[1]/tr");
+            var nodes = doc.DocumentNode.SelectNodes(T.ImageLinkNodeXPath);
 
-            foreach (var node in nodes)
+            foreach (var imageNode in nodes)
             {
-                var imageNode = node.SelectSingleNode($"./td[{T.ImageTdIndex}]/a");
                 var commentLink = imageNode.Attributes["href"].Value;
 
                 if (!commentLink!.StartsWith("https://"))
