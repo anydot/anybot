@@ -15,7 +15,7 @@ namespace RoumenBot.Tests
             var optionsMock = new Mock<IOptions<RoumenOptions<Tag.Main>>>();
             optionsMock.SetupGet(o => o.Value).Returns(new RoumenOptions<Tag.Main>() { DataUrl = "https://www.rouming.cz/" });
 
-            var sut = new RoumenRestService<Tag.Main>(new System.Net.Http.HttpClient(), optionsMock.Object, new RoumenParser());
+            var sut = new RoumenRestService<Tag.Main>(new System.Net.Http.HttpClient(), optionsMock.Object, new RoumenParser(), Mock.Of<IRoumenResponseLogger<Tag.Main>>());
 
             var testImages = (await sut.FetchImagesFromWeb().ConfigureAwait(false)).ToList();
 
@@ -32,7 +32,7 @@ namespace RoumenBot.Tests
             var optionsMock = new Mock<IOptions<RoumenOptions<Tag.Maso>>>();
             optionsMock.SetupGet(o => o.Value).Returns(new RoumenOptions<Tag.Maso>() { DataUrl = "https://www.roumenovomaso.cz/?agree=on" });
 
-            var sut = new RoumenRestService<Tag.Maso>(new System.Net.Http.HttpClient(), optionsMock.Object, new RoumenParser());
+            var sut = new RoumenRestService<Tag.Maso>(new System.Net.Http.HttpClient(), optionsMock.Object, new RoumenParser(), Mock.Of<IRoumenResponseLogger<Tag.Maso>>());
 
             var testImages = (await sut.FetchImagesFromWeb().ConfigureAwait(false)).ToList();
 

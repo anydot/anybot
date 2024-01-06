@@ -11,12 +11,14 @@ namespace RoumenBot
         private readonly IOptions<RoumenOptions<T>> options;
         private readonly HttpClient httpClient;
         private readonly IRoumenParser roumenParser;
+        private readonly IRoumenResponseLogger<T> roumenResponseLogger;
 
-        public RoumenRestService(HttpClient httpClient, IOptions<RoumenOptions<T>> options, IRoumenParser roumenParser)
+        public RoumenRestService(HttpClient httpClient, IOptions<RoumenOptions<T>> options, IRoumenParser roumenParser, IRoumenResponseLogger<T> roumenResponseLogger)
         {
             this.options = options;
             this.httpClient = httpClient;
             this.roumenParser = roumenParser;
+            this.roumenResponseLogger = roumenResponseLogger;
         }
 
         public async Task<IEnumerable<RoumenImage<T>>> FetchImagesFromWeb()
@@ -30,7 +32,11 @@ namespace RoumenBot
 
             response.EnsureSuccessStatusCode();
 
-            return roumenParser.Parse<T>(await response.Content.ReadAsStringAsync().ConfigureAwait(false), baseUrl);
+            var responseString = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+
+            roumenResponseLogger.LogResponse(responseString);
+
+            return roumenParser.Parse<T>(responseString, baseUrl);
         }
     }
 }
