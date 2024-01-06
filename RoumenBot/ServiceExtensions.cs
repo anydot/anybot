@@ -28,6 +28,9 @@ namespace RoumenBot
             services.AddSingleton(s => s.GetRequiredService<FsdbProvider>().Create<RoumenImage<Tag.Main>>(DbPrefix));
             services.AddSingleton(s => s.GetRequiredService<FsdbProvider>().Create<RoumenImage<Tag.Maso>>(DbPrefixMaso));
 
+            services.AddSingleton<IRoumenResponseLogger<Tag.Main>>(s => new RoumenResponseLogger<Tag.Main>(s.GetRequiredService<FsdbProvider>().Create<string>("log_main")));
+            services.AddSingleton<IRoumenResponseLogger<Tag.Maso>>(s => new RoumenResponseLogger<Tag.Maso>(s.GetRequiredService<FsdbProvider>().Create<string>("log_maso")));
+
             return services;
         }
     }
