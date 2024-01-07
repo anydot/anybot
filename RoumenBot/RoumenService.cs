@@ -80,7 +80,8 @@ namespace RoumenBot
 
             foreach (var dbImage in db.Iterate())
             {
-                if (!allImages.Contains(dbImage.Value))
+                var value = dbImage.Value();
+                if (value == null || !allImages.Contains(value))
                 {
                     logger.LogDebug($"Removing stale {dbImage.Key}");
                     db.Delete(dbImage.Key);

@@ -172,8 +172,9 @@ namespace Anybot.Common.Tests
 
             foreach (var kv in db.Iterate())
             {
-                Assert.That(kv.Value.Id1, Is.EqualTo(kv.Key));
-                result.Add(kv.Value);
+                var val = kv.Value();
+                Assert.That(val.Id1, Is.EqualTo(kv.Key));
+                result.Add(val);
             }
 
             Assert.That(result, Is.EquivalentTo(data));
@@ -195,14 +196,16 @@ namespace Anybot.Common.Tests
 
             foreach (var kv in db.Iterate())
             {
-                Assert.That(kv.Value.Id1, Is.EqualTo(kv.Key));
-                result.Add(kv.Value);
+                var val = kv.Value();
+                Assert.That(val.Id1, Is.EqualTo(kv.Key));
+                result.Add(val);
             }
 
             foreach (var kv in db2.Iterate())
             {
-                Assert.That(kv.Value.Id1, Is.EqualTo(kv.Key));
-                result2.Add(kv.Value);
+                var val = kv.Value();
+                Assert.That(val.Id1, Is.EqualTo(kv.Key));
+                result2.Add(val);
             }
 
             Assert.That(result, Is.EquivalentTo(data));
