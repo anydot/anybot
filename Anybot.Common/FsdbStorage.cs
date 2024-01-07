@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Web;
+using System;
 
 namespace Anybot.Common
 {
@@ -28,18 +29,25 @@ namespace Anybot.Common
             File.Delete(Path.Combine(dataRoot, sanitizedKey));
         }
 
-        public IEnumerable<KeyValuePair<string, T>> Iterate()
+        public IEnumerable<KeyValuePair<string, Func<T?>>> Iterate()
         {
             var di = new DirectoryInfo(dataRoot);
 
             foreach (var fi in di.GetFiles())
             {
                 var key = HttpUtility.UrlDecode(fi.Name);
-                if (TryRead(key, out var val))
-                {
-                    yield return KeyValuePair.Create(key, val!);
-                }
+                yield return KeyValuePair.Create(key, () => ReadSafe(key));
             }
+        }
+
+        private T? ReadSafe(string key)
+        {
+            if (!TryRead(key, out var val))
+            {
+                return default;
+            }
+
+            return val;
         }
 
         public bool TryRead(string key, out T? value)
