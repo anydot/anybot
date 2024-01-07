@@ -13,9 +13,9 @@ namespace RoumenBot.Tests
             var parser = new RoumenParser();
             var result = parser.Parse<Tag.Main>(TestResource.RoumingPage, "").ToList();
 
-            Debugger.Break();
+            Assert.That(result, Has.Count.EqualTo(133));
 
-            Assert.That(result, Has.Count.EqualTo(134));
+            Assert.That(result, Has.None.Matches<RoumenImage<Tag.Main>>(t => t.ImageUrl == "https://www.rouming.cz/upload/oriiisky.jpg"));
             Assert.That(result[0], Is.EqualTo(new RoumenImage<Tag.Main>("https://www.rouming.cz/upload/They-must-turn-into-salts.jpg", "They-must-turn-into-salts", "https://www.rouming.cz/roumingShow.php?file=They-must-turn-into-salts.jpg")));
             Assert.That(result[1], Is.EqualTo(new RoumenImage<Tag.Main>("https://www.rouming.cz/upload/Nobody-expects-it.jpg", "Nobody-expects-it", "https://www.rouming.cz/roumingShow.php?file=Nobody-expects-it.jpg")));
         }
