@@ -6,7 +6,7 @@
         {
             public static string ShowPrefix => "/roumingShow.php?file=";
 
-            public static string ImageLinkNodeXPath => "//div[contains(@class, 'roumingList')]/div/div/table[1]/tr/td[last()]/a";
+            public static string ImageLinkNodeXPath => "//div[contains(@class, 'wrapper')]/div[1]/table[1]/tr/td[last()]/a";
         }
     }
 }
