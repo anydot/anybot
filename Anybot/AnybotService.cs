@@ -63,11 +63,11 @@ namespace Anybot
 
                 if (message?.Entities != null && message.Text != null)
                 {
-                    var botcommandEntity = Array.Find(message.Entities, e => e.Type == MessageEntityType.BotCommand);
+                    var botCommandEntity = Array.Find(message.Entities, e => e.Type == MessageEntityType.BotCommand);
 
-                    if (botcommandEntity != null)
+                    if (botCommandEntity != null)
                     {
-                        var command = message.Text.Substring(botcommandEntity.Offset + 1, botcommandEntity.Length - 1);
+                        var command = message.Text.Substring(botCommandEntity.Offset + 1, botCommandEntity.Length - 1);
 
                         if (command.EndsWith(botPostfix))
                         {

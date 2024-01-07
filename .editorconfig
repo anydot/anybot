@@ -73,7 +73,7 @@ csharp_prefer_braces = true:silent
 csharp_style_namespace_declarations = block_scoped:silent
 csharp_style_prefer_method_group_conversion = true:silent
 csharp_style_prefer_top_level_statements = true:silent
-csharp_style_prefer_primary_constructors = true:suggestion
+csharp_style_prefer_primary_constructors = true:none
 csharp_style_expression_bodied_methods = false:silent
 csharp_style_expression_bodied_constructors = false:silent
 csharp_style_expression_bodied_operators = false:silent
@@ -98,3 +98,7 @@ csharp_style_unused_value_expression_statement_preference = discard_variable:sil
 csharp_indent_labels = one_less_than_current
 csharp_space_around_binary_operators = before_and_after
 dotnet_diagnostic.NUnit2045.severity = none
+spelling_exclusion_path = exclusion.dic
+
+# IDE0290: Use primary constructor
+dotnet_diagnostic.IDE0290.severity = none
