@@ -54,3 +54,13 @@ jobs:
           tags: ${{ steps.prep.outputs.tags }}
           push: ${{ startsWith(github.ref, 'refs/tags/') }}
           build-args: RELEASE=${{ startsWith(github.ref, 'refs/tags/') }}
+
+      - name: Publish build status
+        uses: Sibz/github-status-action@v1
+        if: ${{ always() }}
+        with:
+          authToken: ${{secrets.GITHUB_TOKEN}}
+          context: 'Main build'
+          state: ${{ job.status }}
+          sha: ${{github.event.pull_request.head.sha || github.sha}}
+
