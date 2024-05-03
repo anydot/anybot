@@ -6,7 +6,7 @@ using System;
 
 namespace Anybot.Common
 {
-    public class FsdbStorage<T> : IStorage<T>
+    public class FsdbStorage<T> : IStorage<T> where T : class
     {
         private const string Temp = "tmp";
         private const string Data = "data";
@@ -59,7 +59,7 @@ namespace Anybot.Common
             {
                 T? retval = JsonSerializer.Deserialize<T>(File.ReadAllText(dataName, System.Text.Encoding.UTF8));
 
-                if (retval == default(T))
+                if (retval == null)
                 {
                     value = default;
                     return false;
