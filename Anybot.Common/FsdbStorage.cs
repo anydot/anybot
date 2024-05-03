@@ -59,7 +59,7 @@ namespace Anybot.Common
             {
                 T? retval = JsonSerializer.Deserialize<T>(File.ReadAllText(dataName, System.Text.Encoding.UTF8));
 
-                if (retval == null)
+                if (retval == default(T))
                 {
                     value = default;
                     return false;
