@@ -50,7 +50,7 @@ namespace RoumenBot
 
                 if (!db.TryRead(image.ImageUrl, out var _))
                 {
-                    logger.LogDebug($"New image {image.ImageUrl}");
+                    logger.LogDebug("New image {0}", image.ImageUrl);
 
                     if (!options.Value.Silent)
                     {
@@ -60,11 +60,11 @@ namespace RoumenBot
                         }
                         catch (Telegram.Bot.Exceptions.ApiRequestException e) when (e.Message.Contains("wrong file identifier/HTTP URL specified"))
                         {
-                            logger.LogInformation(e, $"Ignoring image publish {image.ImageUrl}");
+                            logger.LogInformation(e, "Ignoring image publish {0}", image.ImageUrl);
                         }
                         catch (Exception e)
                         {
-                            logger.LogError(e, $"Can't process image {image}");
+                            logger.LogError(e, "Can't process image {0}", image);
                             writeToDb = false;
                         }
                     }
@@ -83,7 +83,7 @@ namespace RoumenBot
                 var value = dbImage.Value();
                 if (value == null || !allImages.Contains(value))
                 {
-                    logger.LogDebug($"Removing stale {dbImage.Key}");
+                    logger.LogDebug("Removing stale {0}", dbImage.Key);
                     db.Delete(dbImage.Key);
                 }
             }
