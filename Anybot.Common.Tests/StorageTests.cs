@@ -45,7 +45,7 @@ namespace Anybot.Common.Tests
 
             private class FsdbTestHelper : StorageTestHelper
             {
-                public override IStorage<T> GetCollection<T>(string prefix)
+                public override IStorage<T> GetCollection<T>(string prefix) where T : class
                 {
                     return new FsdbStorage<T>(TestPath, prefix);
                 }
@@ -76,7 +76,7 @@ namespace Anybot.Common.Tests
                 }
             }
 
-            public abstract IStorage<T> GetCollection<T>(string prefix);
+            public abstract IStorage<T> GetCollection<T>(string prefix) where T : class;
         }
 
         private IStorage<TestModel> db;

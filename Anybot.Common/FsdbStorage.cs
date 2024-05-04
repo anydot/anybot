@@ -6,7 +6,7 @@ using System;
 
 namespace Anybot.Common
 {
-    public class FsdbStorage<T> : IStorage<T>
+    public class FsdbStorage<T> : IStorage<T> where T : class
     {
         private const string Temp = "tmp";
         private const string Data = "data";

@@ -9,7 +9,7 @@
             this.path = path;
         }
 
-        public IStorage<T> Create<T>(string prefix)
+        public IStorage<T> Create<T>(string prefix) where T : class
         {
             return new FsdbStorage<T>(path, prefix);
         }
