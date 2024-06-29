@@ -56,7 +56,7 @@ jobs:
           build-args: RELEASE=${{ startsWith(github.ref, 'refs/tags/') }}
 
       - name: Publish build status
-        uses: Sibz/github-status-action@v1
+        uses: guibranco/github-status-action-v2@v1.1.13
         if: ${{ always() }}
         with:
           authToken: ${{secrets.GITHUB_TOKEN}}
