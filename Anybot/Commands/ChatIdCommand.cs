@@ -26,7 +26,7 @@ namespace Anybot.Commands
                 return;
             }
 
-            await delayer.Delay(async () => await bot.SendTextMessageAsync(message.Chat.Id, $"Id of this chat: {message.Chat.Id}", replyToMessageId: message.MessageId).ConfigureAwait(false)).ConfigureAwait(false);
+            await delayer.Delay(async () => await bot.SendMessage(message.Chat.Id, $"Id of this chat: {message.Chat.Id}", replyParameters: new ReplyParameters { MessageId = message.MessageId }).ConfigureAwait(false)).ConfigureAwait(false);
         }
     }
 }
