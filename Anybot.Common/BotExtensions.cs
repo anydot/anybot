@@ -7,15 +7,17 @@ namespace Anybot.Common
 {
     public static class BotExtensions
     {
+        private static readonly LinkPreviewOptions NoPreview = new() { IsDisabled = true };
+
         public static async Task MessageWithOptionalImage(this ITelegramBotClient bot, long chatid, string message, string? imageUrl)
         {
             if (imageUrl == null)
             {
-                await bot.SendTextMessageAsync(chatid, message, parseMode: Telegram.Bot.Types.Enums.ParseMode.MarkdownV2, disableWebPagePreview: true).ConfigureAwait(false);
+                await bot.SendMessage(chatid, message, parseMode: Telegram.Bot.Types.Enums.ParseMode.MarkdownV2, linkPreviewOptions: NoPreview).ConfigureAwait(false);
             }
             else
             {
-                await bot.SendPhotoAsync(chatid, InputFile.FromUri(imageUrl), caption: message, parseMode: Telegram.Bot.Types.Enums.ParseMode.MarkdownV2).ConfigureAwait(false);
+                await bot.SendPhoto(chatid, InputFile.FromUri(imageUrl), caption: message, parseMode: Telegram.Bot.Types.Enums.ParseMode.MarkdownV2).ConfigureAwait(false);
             }
         }
 
