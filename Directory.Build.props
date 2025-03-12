@@ -4,6 +4,7 @@
 		<LangVersion>13.0</LangVersion>
 		<Nullable>enable</Nullable>
 		<AnalysisLevel>8</AnalysisLevel>
+		<WarningsNotAsErrors>CS9057</WarningsNotAsErrors>
 		<PublishReadyToRun>false</PublishReadyToRun>
 		<!-- disabled for net7 <PublishTrimmed>true</PublishTrimmed> -->
 		<PublishReadyToRunShowWarnings>true</PublishReadyToRunShowWarnings>
