@@ -22,10 +22,10 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Prepare .NET 9
+    - name: Prepare .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: '9'
+        dotnet-version: '10'
 
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v3
