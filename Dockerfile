@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/sdk:10.0-preview-alpine@sha256:699502d6e6f78353de99cc4de40d289951295697a78236eefb7e6e4d6cdc00c4 AS build
+FROM mcr.microsoft.com/dotnet/sdk:10.0-preview-alpine@sha256:26659ab85132ddf403f92e2fc967ea0becf9a0c13ab63074ae6c2bac1d973115 AS build
 ARG RELEASE=false
 
 WORKDIR /source
